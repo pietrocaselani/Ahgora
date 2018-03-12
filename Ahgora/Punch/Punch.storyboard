@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Punch View Controller-->
+        <scene sceneID="Gig-6Q-CNt">
+            <objects>
+                <viewController storyboardIdentifier="PunchViewController" id="zVT-Rx-R8D" customClass="PunchViewController" customModule="Ahgora" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oY1-RF-YwL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLp-nY-PqA">
+                                <rect key="frame" x="16" y="343.5" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6p-mg-zM2">
+                                <rect key="frame" x="147" y="328.5" width="81" height="30"/>
+                                <state key="normal" title="Bater ponto"/>
+                                <connections>
+                                    <action selector="punch:" destination="zVT-Rx-R8D" eventType="touchUpInside" id="g3x-Rw-0MG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nLp-nY-PqA" firstAttribute="leading" secondItem="Rbp-u5-Q1Y" secondAttribute="leading" constant="16" id="EhV-MD-Fvg"/>
+                            <constraint firstItem="t6p-mg-zM2" firstAttribute="centerY" secondItem="Rbp-u5-Q1Y" secondAttribute="centerY" id="Mbz-jd-ntD"/>
+                            <constraint firstItem="nLp-nY-PqA" firstAttribute="centerY" secondItem="Rbp-u5-Q1Y" secondAttribute="centerY" id="gB6-dc-tO0"/>
+                            <constraint firstItem="Rbp-u5-Q1Y" firstAttribute="trailing" secondItem="nLp-nY-PqA" secondAttribute="trailing" constant="16" id="lx1-rW-Mx8"/>
+                            <constraint firstItem="t6p-mg-zM2" firstAttribute="centerX" secondItem="Rbp-u5-Q1Y" secondAttribute="centerX" id="uUM-pG-lcL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rbp-u5-Q1Y"/>
+                    </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="nLp-nY-PqA" id="kxC-tM-ufU"/>
+                        <outlet property="punchButton" destination="t6p-mg-zM2" id="wCD-HZ-ibL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSf-Eb-Jdc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="105"/>
+        </scene>
+    </scenes>
+</document>

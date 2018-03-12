@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="tO2-RQ-dnS">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="d8A-C0-2pg" customClass="SettingsViewController" customModule="Ahgora" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d94-Rf-kUT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Company token identifier" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jjz-Sb-STQ">
+                                <rect key="frame" x="16" y="20" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Company identifier" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6po-vj-r4q">
+                                <rect key="frame" x="16" y="66" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Employee registration" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c1a-tY-wsP">
+                                <rect key="frame" x="16" y="112" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Employee password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vNc-As-myJ">
+                                <rect key="frame" x="16" y="158" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8J-xR-P2y">
+                                <rect key="frame" x="325" y="204" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveCredentials:" destination="d8A-C0-2pg" eventType="touchUpInside" id="Nxh-dP-583"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6v1-93-Mso" firstAttribute="trailing" secondItem="jjz-Sb-STQ" secondAttribute="trailing" constant="16" id="6ht-3H-MQ5"/>
+                            <constraint firstItem="vNc-As-myJ" firstAttribute="leading" secondItem="6v1-93-Mso" secondAttribute="leading" constant="16" id="8K2-4K-ehk"/>
+                            <constraint firstItem="c1a-tY-wsP" firstAttribute="top" secondItem="6po-vj-r4q" secondAttribute="bottom" constant="16" id="AP5-fH-pzO"/>
+                            <constraint firstItem="6v1-93-Mso" firstAttribute="trailing" secondItem="c1a-tY-wsP" secondAttribute="trailing" constant="16" id="B31-Bk-mfi"/>
+                            <constraint firstItem="vNc-As-myJ" firstAttribute="top" secondItem="c1a-tY-wsP" secondAttribute="bottom" constant="16" id="BTV-zj-RSR"/>
+                            <constraint firstItem="6po-vj-r4q" firstAttribute="leading" secondItem="6v1-93-Mso" secondAttribute="leading" constant="16" id="BaV-hR-sg5"/>
+                            <constraint firstItem="6v1-93-Mso" firstAttribute="trailing" secondItem="P8J-xR-P2y" secondAttribute="trailing" constant="16" id="OpF-o6-OhY"/>
+                            <constraint firstItem="6v1-93-Mso" firstAttribute="trailing" secondItem="6po-vj-r4q" secondAttribute="trailing" constant="16" id="ZiO-Wr-fnn"/>
+                            <constraint firstItem="6po-vj-r4q" firstAttribute="top" secondItem="jjz-Sb-STQ" secondAttribute="bottom" constant="16" id="are-32-zdO"/>
+                            <constraint firstItem="jjz-Sb-STQ" firstAttribute="top" secondItem="6v1-93-Mso" secondAttribute="top" id="cgn-NP-KTT"/>
+                            <constraint firstItem="6v1-93-Mso" firstAttribute="trailing" secondItem="vNc-As-myJ" secondAttribute="trailing" constant="16" id="jQA-je-4AT"/>
+                            <constraint firstItem="P8J-xR-P2y" firstAttribute="top" secondItem="vNc-As-myJ" secondAttribute="bottom" constant="16" id="wpL-Ug-XgZ"/>
+                            <constraint firstItem="c1a-tY-wsP" firstAttribute="leading" secondItem="6v1-93-Mso" secondAttribute="leading" constant="16" id="wz1-Cm-ivz"/>
+                            <constraint firstItem="jjz-Sb-STQ" firstAttribute="leading" secondItem="6v1-93-Mso" secondAttribute="leading" constant="16" id="zqb-C6-310"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6v1-93-Mso"/>
+                    </view>
+                    <connections>
+                        <outlet property="companyIdentifierTextField" destination="6po-vj-r4q" id="Ked-pz-OQ0"/>
+                        <outlet property="companyTokenIdentifierTextField" destination="jjz-Sb-STQ" id="Ia5-lc-o43"/>
+                        <outlet property="employeePasswordTextField" destination="vNc-As-myJ" id="AOm-Ar-E7D"/>
+                        <outlet property="employeeRegistrationTextField" destination="c1a-tY-wsP" id="cCI-Vv-jc3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HAW-nc-WoF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="107.49625187406298"/>
+        </scene>
+    </scenes>
+</document>
