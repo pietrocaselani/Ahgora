@@ -41,6 +41,12 @@ final class PunchViewController: UIViewController, PunchView {
 
 		let alert = UIAlertController(title: time, message: message, preferredStyle: .alert)
 
+		let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
+			alert.dismiss(animated: true, completion: nil)
+		}
+
+		alert.addAction(okAction)
+
 		present(alert, animated: true, completion: nil)
 	}
 
