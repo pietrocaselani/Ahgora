@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Punch View Controller-->
+        <scene sceneID="RUE-hm-rvm">
+            <objects>
+                <viewController storyboardIdentifier="PunchViewController" id="mh7-Y9-eAt" customClass="PunchViewController" customModule="AhgoraMacOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="9jf-Z1-3zc">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PAz-PG-oyj">
+                                <rect key="frame" x="207" y="141" width="37" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="VXo-ly-vv1">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="E0c-2l-ClI">
+                                <rect key="frame" x="169" y="171" width="112" height="32"/>
+                                <buttonCell key="cell" type="push" title="Bater ponto" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qFf-1X-VBu">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="punch:" target="mh7-Y9-eAt" id="uZt-Mb-G6w"/>
+                                    </connections>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="PAz-PG-oyj" firstAttribute="top" secondItem="E0c-2l-ClI" secondAttribute="bottom" constant="20" id="XeR-zO-6KV"/>
+                            <constraint firstItem="PAz-PG-oyj" firstAttribute="centerY" secondItem="9jf-Z1-3zc" secondAttribute="centerY" id="dcC-32-zJS"/>
+                            <constraint firstItem="PAz-PG-oyj" firstAttribute="centerX" secondItem="9jf-Z1-3zc" secondAttribute="centerX" id="oTK-Ve-qUk"/>
+                            <constraint firstItem="E0c-2l-ClI" firstAttribute="centerX" secondItem="9jf-Z1-3zc" secondAttribute="centerX" id="sWk-72-8UF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoTextField" destination="PAz-PG-oyj" id="usB-6v-dHr"/>
+                        <outlet property="punchButton" destination="qFf-1X-VBu" id="8sn-00-c2z"/>
+                    </connections>
+                </viewController>
+                <customObject id="cpm-vA-E3A" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="67" y="107"/>
+        </scene>
+    </scenes>
+</document>

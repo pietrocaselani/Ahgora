@@ -11,7 +11,7 @@ public struct PunchResult: Decodable {
 		case result
 		case time
 		case day
-		case puchesOfDay = "batidas_dia"
+		case punchesOfDay = "batidas_dia"
 		case name = "nome"
 	}
 
@@ -20,7 +20,7 @@ public struct PunchResult: Decodable {
 
 		self.result = try container.decode(Bool.self, forKey: .result)
 		self.time = try container.decode(String.self, forKey: .time)
-		self.punchesOfDay = try container.decode([String].self, forKey: .puchesOfDay)
+		self.punchesOfDay = try container.decode([String].self, forKey: .punchesOfDay)
 		self.name = try container.decode(String.self, forKey: .name)
 
 		let day = try container.decode(String.self, forKey: .day)

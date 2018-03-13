@@ -2,12 +2,12 @@ import Foundation
 
 public struct MirrorDay {
 	static let empty = MirrorDay()
-	public let puches: [MirrorDayPunch]
+	public let punches: [MirrorDayPunch]
 	public let results: [MirrorDayResult]
 	public let date: Date
 
 	init() {
-		self.puches = [MirrorDayPunch]()
+		self.punches = [MirrorDayPunch]()
 		self.results = [MirrorDayResult]()
 		self.date = Date(timeIntervalSince1970: 0)
 	}
@@ -18,7 +18,7 @@ public struct MirrorDay {
 				return nil
 		}
 
-		self.puches = punchesJSON.flatMap { MirrorDayPunch(json: $0) }
+		self.punches = punchesJSON.flatMap { MirrorDayPunch(json: $0) }
 		self.results = resultsJSON.flatMap { MirrorDayResult(json: $0) }
 		self.date = date
 	}

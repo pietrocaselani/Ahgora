@@ -1,5 +1,4 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '10.0'
 
 def common_pods
   pod 'SwiftLint', '0.23.1'
@@ -15,13 +14,23 @@ def tests_shared_pods
 end
 
 target 'Ahgora' do
+  platform :ios, '10.0'
   use_frameworks!
 
   ios_pods
 
 end
 
+target 'AhgoraMacOS' do
+  platform :osx, '10.11'
+  use_frameworks!
+
+  common_pods
+
+end
+
 target 'AhgoraCore' do
+  platform :osx, '10.11'
   use_frameworks!
 
   common_pods
@@ -35,6 +44,7 @@ target 'AhgoraCore' do
 end
 
 target 'AhgoraCoreiOS' do
+  platform :ios, '10.0'
   use_frameworks!
 
   common_pods

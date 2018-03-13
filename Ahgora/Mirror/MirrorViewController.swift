@@ -78,7 +78,7 @@ extension MirrorViewController: UITableViewDataSource {
 		let resultsText = day.results.map { "\($0.type): \($0.value)" }.joined(separator: " | ")
 
 		cell.textLabel?.text = "\(dateText) \(resultsText)"
-		cell.detailTextLabel?.text = day.puches.map { $0.hour }.joined(separator: ", ")
+		cell.detailTextLabel?.text = day.punches.map { $0.hour }.joined(separator: ", ")
 
 		return cell
 	}

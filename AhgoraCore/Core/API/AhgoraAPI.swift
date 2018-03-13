@@ -31,7 +31,7 @@ extension AhgoraAPI: TargetType {
 		}
 	}
 
-	public var method: Method {
+	public var method: Moya.Method {
 		return .post
 	}
 

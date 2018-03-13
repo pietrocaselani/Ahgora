@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		21077A4855C3BD74A9174553 /* Pods_Ahgora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881A46321519A1F0D8915037 /* Pods_Ahgora.framework */; };
+		442F25B4777C5DB5653C29B1 /* Pods_AhgoraMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0AA6BCC17F738464D7471B /* Pods_AhgoraMacOS.framework */; };
 		4F1354ED20532CE700D6AD8B /* PunchContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1354EC20532CE700D6AD8B /* PunchContract.swift */; };
 		4F1354EE20532CE700D6AD8B /* PunchContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1354EC20532CE700D6AD8B /* PunchContract.swift */; };
 		4F1354F020532D5C00D6AD8B /* DateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1354EF20532D5C00D6AD8B /* DateProvider.swift */; };
@@ -35,6 +36,26 @@
 		4F20F5A72053293500FD7F10 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20F58D2053276300FD7F10 /* BaseView.swift */; };
 		4F20F5A82053293800FD7F10 /* AppFlowContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20F588205326E200FD7F10 /* AppFlowContract.swift */; };
 		4F20F5A92053293800FD7F10 /* AppFlowDefaultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20F58F2053280E00FD7F10 /* AppFlowDefaultPresenter.swift */; };
+		4F56580920587BE600D3D56B /* Punch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F56580820587BE600D3D56B /* Punch.storyboard */; };
+		4F56580B20587BF400D3D56B /* PunchModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56580A20587BF400D3D56B /* PunchModule.swift */; };
+		4F56580D20587BFF00D3D56B /* PunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56580C20587BFF00D3D56B /* PunchViewController.swift */; };
+		4F648E012057437300FD03C9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F648DFF2057437300FD03C9 /* MainMenu.xib */; };
+		4F648E05205752B400FD03C9 /* MirrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F648E04205752B400FD03C9 /* MirrorViewController.swift */; };
+		4F648E07205752BB00FD03C9 /* MirrorModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F648E06205752BB00FD03C9 /* MirrorModule.swift */; };
+		4F648E092057535F00FD03C9 /* Mirror.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F648E082057535F00FD03C9 /* Mirror.storyboard */; };
+		4FAA25752056D8470006735A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA25742056D8470006735A /* AppDelegate.swift */; };
+		4FAA25772056D8470006735A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FAA25762056D8470006735A /* Assets.xcassets */; };
+		4FAA25852056D8640006735A /* AhgoraCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F20F570205326CE00FD7F10 /* AhgoraCore.framework */; };
+		4FAA25862056D8640006735A /* AhgoraCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F20F570205326CE00FD7F10 /* AhgoraCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4FAA258E2056D8FC0006735A /* AppFlowModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA258D2056D8FC0006735A /* AppFlowModule.swift */; };
+		4FAA25902056D90E0006735A /* AppFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA258F2056D90E0006735A /* AppFlowViewController.swift */; };
+		4FAA25932056D9550006735A /* NSViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA25922056D9550006735A /* NSViewControllerExtensions.swift */; };
+		4FAA25B32056DA2C0006735A /* AppFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FAA25B22056DA2C0006735A /* AppFlow.storyboard */; };
+		4FAA25B52056E3790006735A /* AppFlowMacOSCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA25B42056E3780006735A /* AppFlowMacOSCreator.swift */; };
+		4FAA25B92056E4290006735A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA25B82056E4290006735A /* SettingsViewController.swift */; };
+		4FAA25BB2056E4370006735A /* SettingsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA25BA2056E4370006735A /* SettingsModule.swift */; };
+		4FAA25BD2056E4BE0006735A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FAA25BC2056E4BE0006735A /* Settings.storyboard */; };
+		4FAA25BE2056E5700006735A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9B1662055F2ED00FD28F1 /* Environment.swift */; };
 		4FF9B10E2055CB7600FD28F1 /* SettingsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9B10D2055CB7600FD28F1 /* SettingsContract.swift */; };
 		4FF9B10F2055CB7600FD28F1 /* SettingsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9B10D2055CB7600FD28F1 /* SettingsContract.swift */; };
 		4FF9B1112055CBBA00FD28F1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9B1102055CBBA00FD28F1 /* AppState.swift */; };
@@ -139,6 +160,13 @@
 			remoteGlobalIDString = 4F20F5982053292900FD7F10;
 			remoteInfo = AhgoraCoreiOS;
 		};
+		4FAA25872056D8640006735A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F20F54E2053265A00FD7F10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F20F56F205326CE00FD7F10;
+			remoteInfo = AhgoraCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -153,10 +181,22 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4FAA25892056D8650006735A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4FAA25862056D8640006735A /* AhgoraCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1AD95EE600E634E2994F6A8E /* Pods_AhgoraCoreiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AhgoraCoreiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ACE7B5DF9D73D3BB7593596 /* Pods-AhgoramacOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhgoramacOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AhgoramacOS/Pods-AhgoramacOS.release.xcconfig"; sourceTree = "<group>"; };
 		2E20F0E69A8B757758DF578A /* Pods_AhgoraCoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AhgoraCoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F26619B1162585D7D777DD /* Pods-Ahgora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ahgora.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ahgora/Pods-Ahgora.release.xcconfig"; sourceTree = "<group>"; };
 		3E917F4FACBDDA60EBED8100 /* Pods-AhgoraCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhgoraCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-AhgoraCore/Pods-AhgoraCore.release.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +226,26 @@
 		4F20F5992053292900FD7F10 /* AhgoraCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AhgoraCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F20F59B2053292900FD7F10 /* AhgoraCoreiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AhgoraCoreiOS.h; sourceTree = "<group>"; };
 		4F20F59C2053292900FD7F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F56580820587BE600D3D56B /* Punch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Punch.storyboard; sourceTree = "<group>"; };
+		4F56580A20587BF400D3D56B /* PunchModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchModule.swift; sourceTree = "<group>"; };
+		4F56580C20587BFF00D3D56B /* PunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchViewController.swift; sourceTree = "<group>"; };
+		4F648E002057437300FD03C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = AhgoramacOS/Base.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		4F648E04205752B400FD03C9 /* MirrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorViewController.swift; sourceTree = "<group>"; };
+		4F648E06205752BB00FD03C9 /* MirrorModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorModule.swift; sourceTree = "<group>"; };
+		4F648E082057535F00FD03C9 /* Mirror.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mirror.storyboard; sourceTree = "<group>"; };
+		4FAA25722056D8470006735A /* AhgoraMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AhgoraMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FAA25742056D8470006735A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FAA25762056D8470006735A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FAA257B2056D8470006735A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FAA257C2056D8470006735A /* AhgoraMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AhgoraMacOS.entitlements; sourceTree = "<group>"; };
+		4FAA258D2056D8FC0006735A /* AppFlowModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowModule.swift; sourceTree = "<group>"; };
+		4FAA258F2056D90E0006735A /* AppFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowViewController.swift; sourceTree = "<group>"; };
+		4FAA25922056D9550006735A /* NSViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NSViewControllerExtensions.swift; path = AhgoramacOS/Extensions/NSViewControllerExtensions.swift; sourceTree = SOURCE_ROOT; };
+		4FAA25B22056DA2C0006735A /* AppFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppFlow.storyboard; sourceTree = "<group>"; };
+		4FAA25B42056E3780006735A /* AppFlowMacOSCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowMacOSCreator.swift; sourceTree = "<group>"; };
+		4FAA25B82056E4290006735A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = AhgoramacOS/Settings/SettingsViewController.swift; sourceTree = SOURCE_ROOT; };
+		4FAA25BA2056E4370006735A /* SettingsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModule.swift; sourceTree = "<group>"; };
+		4FAA25BC2056E4BE0006735A /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		4FF9B10D2055CB7600FD28F1 /* SettingsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsContract.swift; sourceTree = "<group>"; };
 		4FF9B1102055CBBA00FD28F1 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		4FF9B1132055CBDA00FD28F1 /* CompanyCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCredentials.swift; sourceTree = "<group>"; };
@@ -236,11 +296,16 @@
 		4FF9B1A120562A1000FD28F1 /* PunchModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchModule.swift; sourceTree = "<group>"; };
 		523741997D7C6239C1BE18BF /* Pods-Ahgora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ahgora.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ahgora/Pods-Ahgora.debug.xcconfig"; sourceTree = "<group>"; };
 		584DC882B40461C88603E285 /* Pods-AhgoraCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhgoraCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AhgoraCore/Pods-AhgoraCore.debug.xcconfig"; sourceTree = "<group>"; };
+		6818FC6C05D31330204E2BE2 /* Pods-AhgoraMacOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhgoraMacOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AhgoraMacOS/Pods-AhgoraMacOS.release.xcconfig"; sourceTree = "<group>"; };
 		823AAFC8C5EA14590AE2F122 /* Pods-AhgoraCoreiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhgoraCoreiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AhgoraCoreiOS/Pods-AhgoraCoreiOS.release.xcconfig"; sourceTree = "<group>"; };
 		881A46321519A1F0D8915037 /* Pods_Ahgora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ahgora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		887078632C3036FBD08501CC /* Pods-AhgoraMacOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhgoraMacOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AhgoraMacOS/Pods-AhgoraMacOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8B0AA6BCC17F738464D7471B /* Pods_AhgoraMacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AhgoraMacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		922CE8B2F70F10FD3A60A92C /* Pods-AhgoraCoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhgoraCoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AhgoraCoreTests/Pods-AhgoraCoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC4941A25D1C5D982C19D22F /* Pods-AhgoraCoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhgoraCoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AhgoraCoreTests/Pods-AhgoraCoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3E0AFF6511CB1551D3F0A44 /* Pods-AhgoramacOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhgoramacOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AhgoramacOS/Pods-AhgoramacOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C663D4F335CB736D2214D959 /* Pods_AhgoraCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AhgoraCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC2D5C9393A6D35F6CAB369 /* Pods_AhgoramacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AhgoramacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +340,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C506B5FE7984B38DF65D16 /* Pods_AhgoraCoreiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FAA256F2056D8470006735A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FAA25852056D8640006735A /* AhgoraCore.framework in Frameworks */,
+				442F25B4777C5DB5653C29B1 /* Pods_AhgoraMacOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +392,7 @@
 				4F20F571205326CE00FD7F10 /* AhgoraCore */,
 				4F20F57C205326CE00FD7F10 /* AhgoraCoreTests */,
 				4F20F59A2053292900FD7F10 /* AhgoraCoreiOS */,
+				4FAA25732056D8470006735A /* AhgoraMacOS */,
 				4F20F5572053265A00FD7F10 /* Products */,
 				948508A4A20D4FF722E903ED /* Pods */,
 				79F16C8519F0341DBB1CEF67 /* Frameworks */,
@@ -331,6 +406,7 @@
 				4F20F570205326CE00FD7F10 /* AhgoraCore.framework */,
 				4F20F578205326CE00FD7F10 /* AhgoraCoreTests.xctest */,
 				4F20F5992053292900FD7F10 /* AhgoraCore.framework */,
+				4FAA25722056D8470006735A /* AhgoraMacOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -429,6 +505,72 @@
 				4FF9B19A2056262000FD28F1 /* PunchDefaultPresenter.swift */,
 			);
 			path = Punch;
+			sourceTree = "<group>";
+		};
+		4F56580720587B8800D3D56B /* Punch */ = {
+			isa = PBXGroup;
+			children = (
+				4F56580820587BE600D3D56B /* Punch.storyboard */,
+				4F56580A20587BF400D3D56B /* PunchModule.swift */,
+				4F56580C20587BFF00D3D56B /* PunchViewController.swift */,
+			);
+			path = Punch;
+			sourceTree = "<group>";
+		};
+		4FAA25732056D8470006735A /* AhgoraMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				4FAA257C2056D8470006735A /* AhgoraMacOS.entitlements */,
+				4FAA25742056D8470006735A /* AppDelegate.swift */,
+				4FAA258A2056D8930006735A /* AppFlow */,
+				4FAA25762056D8470006735A /* Assets.xcassets */,
+				4FAA25912056D9470006735A /* Extensions */,
+				4FAA257B2056D8470006735A /* Info.plist */,
+				4F648DFF2057437300FD03C9 /* MainMenu.xib */,
+				4FAA25B72056E4180006735A /* Mirror */,
+				4F56580720587B8800D3D56B /* Punch */,
+				4FAA25B62056E4120006735A /* Settings */,
+			);
+			path = AhgoraMacOS;
+			sourceTree = "<group>";
+		};
+		4FAA258A2056D8930006735A /* AppFlow */ = {
+			isa = PBXGroup;
+			children = (
+				4FAA258D2056D8FC0006735A /* AppFlowModule.swift */,
+				4FAA258F2056D90E0006735A /* AppFlowViewController.swift */,
+				4FAA25B22056DA2C0006735A /* AppFlow.storyboard */,
+				4FAA25B42056E3780006735A /* AppFlowMacOSCreator.swift */,
+			);
+			path = AppFlow;
+			sourceTree = "<group>";
+		};
+		4FAA25912056D9470006735A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4FAA25922056D9550006735A /* NSViewControllerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4FAA25B62056E4120006735A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4FAA25B82056E4290006735A /* SettingsViewController.swift */,
+				4FAA25BA2056E4370006735A /* SettingsModule.swift */,
+				4FAA25BC2056E4BE0006735A /* Settings.storyboard */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4FAA25B72056E4180006735A /* Mirror */ = {
+			isa = PBXGroup;
+			children = (
+				4F648E04205752B400FD03C9 /* MirrorViewController.swift */,
+				4F648E06205752BB00FD03C9 /* MirrorModule.swift */,
+				4F648E082057535F00FD03C9 /* Mirror.storyboard */,
+			);
+			path = Mirror;
 			sourceTree = "<group>";
 		};
 		4FF9B10C2055CB4200FD28F1 /* Settings */ = {
@@ -537,6 +679,8 @@
 				C663D4F335CB736D2214D959 /* Pods_AhgoraCore.framework */,
 				2E20F0E69A8B757758DF578A /* Pods_AhgoraCoreTests.framework */,
 				1AD95EE600E634E2994F6A8E /* Pods_AhgoraCoreiOS.framework */,
+				CDC2D5C9393A6D35F6CAB369 /* Pods_AhgoramacOS.framework */,
+				8B0AA6BCC17F738464D7471B /* Pods_AhgoraMacOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -552,6 +696,10 @@
 				BC4941A25D1C5D982C19D22F /* Pods-AhgoraCoreTests.release.xcconfig */,
 				4F18894362DCC42E24A04A50 /* Pods-AhgoraCoreiOS.debug.xcconfig */,
 				823AAFC8C5EA14590AE2F122 /* Pods-AhgoraCoreiOS.release.xcconfig */,
+				C3E0AFF6511CB1551D3F0A44 /* Pods-AhgoramacOS.debug.xcconfig */,
+				2ACE7B5DF9D73D3BB7593596 /* Pods-AhgoramacOS.release.xcconfig */,
+				887078632C3036FBD08501CC /* Pods-AhgoraMacOS.debug.xcconfig */,
+				6818FC6C05D31330204E2BE2 /* Pods-AhgoraMacOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -661,6 +809,28 @@
 			productReference = 4F20F5992053292900FD7F10 /* AhgoraCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		4FAA25712056D8470006735A /* AhgoraMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FAA257D2056D8470006735A /* Build configuration list for PBXNativeTarget "AhgoraMacOS" */;
+			buildPhases = (
+				DFF8C9850502B81BE27A524C /* [CP] Check Pods Manifest.lock */,
+				4FAA256E2056D8470006735A /* Sources */,
+				4FAA256F2056D8470006735A /* Frameworks */,
+				4FAA25702056D8470006735A /* Resources */,
+				4FAA25892056D8650006735A /* Embed Frameworks */,
+				6BCE266D7A85862403115786 /* [CP] Embed Pods Frameworks */,
+				7450ACEBD280A1250ED49989 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FAA25882056D8640006735A /* PBXTargetDependency */,
+			);
+			name = AhgoraMacOS;
+			productName = AhgoraMacOS;
+			productReference = 4FAA25722056D8470006735A /* AhgoraMacOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -688,6 +858,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					4FAA25712056D8470006735A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 4F20F5512053265A00FD7F10 /* Build configuration list for PBXProject "Ahgora" */;
@@ -707,6 +881,7 @@
 				4F20F56F205326CE00FD7F10 /* AhgoraCore */,
 				4F20F577205326CE00FD7F10 /* AhgoraCoreTests */,
 				4F20F5982053292900FD7F10 /* AhgoraCoreiOS */,
+				4FAA25712056D8470006735A /* AhgoraMacOS */,
 			);
 		};
 /* End PBXProject section */
@@ -743,6 +918,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FAA25702056D8470006735A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F648E092057535F00FD03C9 /* Mirror.storyboard in Resources */,
+				4F56580920587BE600D3D56B /* Punch.storyboard in Resources */,
+				4FAA25772056D8470006735A /* Assets.xcassets in Resources */,
+				4FAA25B32056DA2C0006735A /* AppFlow.storyboard in Resources */,
+				4FAA25BD2056E4BE0006735A /* Settings.storyboard in Resources */,
+				4F648E012057437300FD03C9 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,10 +992,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Ahgora/Pods-Ahgora-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-iOS/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result-iOS/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -821,6 +1009,45 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ahgora/Pods-Ahgora-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6BCE266D7A85862403115786 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AhgoraMacOS/Pods-AhgoraMacOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-macOS/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-macOS/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result-macOS/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-macOS/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AhgoraMacOS/Pods-AhgoraMacOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7450ACEBD280A1250ED49989 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AhgoraMacOS/Pods-AhgoraMacOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8A8AC76C2A54C424B339BD33 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -828,11 +1055,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AhgoraCoreTests/Pods-AhgoraCoreTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-macOS/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-macOS/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-macOS/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result-macOS/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -896,6 +1123,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AhgoraCoreiOS/Pods-AhgoraCoreiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFF8C9850502B81BE27A524C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AhgoraMacOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ECC405DF2D3E1F190E2C9A63 /* [CP] Check Pods Manifest.lock */ = {
@@ -1062,6 +1307,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4FAA256E2056D8470006735A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FAA25B52056E3790006735A /* AppFlowMacOSCreator.swift in Sources */,
+				4FAA25BE2056E5700006735A /* Environment.swift in Sources */,
+				4F648E05205752B400FD03C9 /* MirrorViewController.swift in Sources */,
+				4FAA25752056D8470006735A /* AppDelegate.swift in Sources */,
+				4F56580B20587BF400D3D56B /* PunchModule.swift in Sources */,
+				4FAA25902056D90E0006735A /* AppFlowViewController.swift in Sources */,
+				4FAA25932056D9550006735A /* NSViewControllerExtensions.swift in Sources */,
+				4FAA258E2056D8FC0006735A /* AppFlowModule.swift in Sources */,
+				4FAA25BB2056E4370006735A /* SettingsModule.swift in Sources */,
+				4F56580D20587BFF00D3D56B /* PunchViewController.swift in Sources */,
+				4F648E07205752BB00FD03C9 /* MirrorModule.swift in Sources */,
+				4FAA25B92056E4290006735A /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1075,6 +1339,11 @@
 			target = 4F20F5982053292900FD7F10 /* AhgoraCoreiOS */;
 			targetProxy = 4F20F59E2053292900FD7F10 /* PBXContainerItemProxy */;
 		};
+		4FAA25882056D8640006735A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F20F56F205326CE00FD7F10 /* AhgoraCore */;
+			targetProxy = 4FAA25872056D8640006735A /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1084,6 +1353,14 @@
 				4F20F5632053265A00FD7F10 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4F648DFF2057437300FD03C9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F648E002057437300FD03C9 /* Base */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1248,7 +1525,7 @@
 				INFOPLIST_FILE = AhgoraCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.pietrocaselani.ahgoracore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
@@ -1278,7 +1555,7 @@
 				INFOPLIST_FILE = AhgoraCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.pietrocaselani.ahgoracore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
@@ -1331,7 +1608,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F18894362DCC42E24A04A50 /* Pods-AhgoraCoreiOS.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1356,7 +1633,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 823AAFC8C5EA14590AE2F122 /* Pods-AhgoraCoreiOS.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1374,6 +1651,46 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4FAA257E2056D8470006735A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 887078632C3036FBD08501CC /* Pods-AhgoraMacOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B5RPM7SE3L;
+				INFOPLIST_FILE = AhgoraMacOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.pietrocaselani.ahgoramacos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		4FAA257F2056D8470006735A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6818FC6C05D31330204E2BE2 /* Pods-AhgoraMacOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B5RPM7SE3L;
+				INFOPLIST_FILE = AhgoraMacOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.pietrocaselani.ahgoramacos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1421,6 +1738,15 @@
 			buildConfigurations = (
 				4F20F5A42053292A00FD7F10 /* Debug */,
 				4F20F5A52053292A00FD7F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FAA257D2056D8470006735A /* Build configuration list for PBXNativeTarget "AhgoraMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FAA257E2056D8470006735A /* Debug */,
+				4FAA257F2056D8470006735A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -35,9 +35,9 @@ final class PunchViewController: UIViewController, PunchView {
 	func show(punch: PunchResult) {
 		let time = punch.time
 		let name = punch.name
-		let puchesOfDay = punch.punchesOfDay.joined(separator: ", ")
+		let punchesOfDay = punch.punchesOfDay.joined(separator: ", ")
 
-		let message = "\(name)\n\(puchesOfDay)"
+		let message = "\(name)\n\(punchesOfDay)"
 
 		let alert = UIAlertController(title: time, message: message, preferredStyle: .alert)
 

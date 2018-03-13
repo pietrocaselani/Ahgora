@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App Flow View Controller-->
+        <scene sceneID="bOB-tL-JAV">
+            <objects>
+                <customObject id="z1b-Je-Kfk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <tabViewController storyboardIdentifier="AppFlowViewController" showSeguePresentationStyle="single" selectedTabViewItemIndex="0" id="24D-7Y-L8A" customClass="AppFlowViewController" customModule="AhgoraMacOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem id="F0I-ma-cdZ"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" initialItem="x03-49-5Lm" id="OFh-GF-Q5D">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <tabViewItems>
+                            <tabViewItem label="Item 0" identifier="" id="cMd-yo-iKI">
+                                <view key="view" id="PYB-pl-h5O">
+                                    <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Item 1" identifier="" id="x03-49-5Lm">
+                                <view key="view" id="iOF-Nz-oNi">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </tabViewItem>
+                        </tabViewItems>
+                        <connections>
+                            <outlet property="delegate" destination="24D-7Y-L8A" id="5Gh-rB-kyb"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="OFh-GF-Q5D" id="vRE-qo-Sm8"/>
+                        <segue destination="fGt-qN-lN0" kind="relationship" relationship="tabItems" id="7Jy-Xs-pPa"/>
+                    </connections>
+                </tabViewController>
+            </objects>
+            <point key="canvasLocation" x="-757" y="-184"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VsJ-WE-goB">
+            <objects>
+                <viewController id="fGt-qN-lN0" sceneMemberID="viewController">
+                    <view key="view" id="C7c-EC-AgJ">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="MbC-sy-lcb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
