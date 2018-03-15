@@ -4,7 +4,7 @@ Ahgora
 Ahgora is:
 
 * a wrapper arround the unofficial Ahgora's API
-* a iOS app to interact with Ahgora.
+* a iOS/macOS app to interact with Ahgora.
 
 ## Instructions
 
