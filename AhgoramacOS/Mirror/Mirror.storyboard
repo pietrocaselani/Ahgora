@@ -11,11 +11,11 @@
             <objects>
                 <viewController storyboardIdentifier="MirrorViewController" id="8nI-sk-rTh" customClass="MirrorViewController" customModule="AhgoraMacOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="oSt-kn-SLh">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="336"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="416"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="T1x-ZI-UxN">
-                                <rect key="frame" x="18" y="299" width="414" height="17"/>
+                                <rect key="frame" x="18" y="379" width="414" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Mirror" id="Wpt-ED-hBo">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -23,7 +23,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Bpt-sP-gCs">
-                                <rect key="frame" x="18" y="262" width="414" height="17"/>
+                                <rect key="frame" x="18" y="342" width="414" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Mirror" id="NPW-gz-rUD">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -31,7 +31,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bhX-Py-hzJ">
-                                <rect key="frame" x="187" y="160" width="76" height="17"/>
+                                <rect key="frame" x="187" y="200" width="76" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Carregando" id="1Pg-zt-qIV">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -39,13 +39,13 @@
                                 </textFieldCell>
                             </textField>
                             <scrollView hidden="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fv-pY-qaA">
-                                <rect key="frame" x="20" y="20" width="410" height="222"/>
+                                <rect key="frame" x="20" y="20" width="410" height="259"/>
                                 <clipView key="contentView" id="kEA-1X-Qu6">
-                                    <rect key="frame" x="1" y="0.0" width="408" height="221"/>
+                                    <rect key="frame" x="1" y="0.0" width="408" height="258"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="rOB-mv-kJz" viewBased="YES" id="IPz-9f-9ax">
-                                            <rect key="frame" x="0.0" y="0.0" width="408" height="198"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="408" height="235"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -167,15 +167,44 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
+                            <datePicker hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cXr-Wd-g6H">
+                                <rect key="frame" x="20" y="299" width="79" height="27"/>
+                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="zYV-Qr-xZU">
+                                    <font key="font" metaFont="system"/>
+                                    <date key="date" timeIntervalSinceReferenceDate="-595929600">
+                                        <!--1982-02-12 16:00:00 +0000-->
+                                    </date>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <datePickerElements key="datePickerElements" year="YES" month="YES"/>
+                                </datePickerCell>
+                                <connections>
+                                    <action selector="changeMonth:" target="8nI-sk-rTh" id="hEz-Q1-Mb8"/>
+                                </connections>
+                            </datePicker>
+                            <button hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Yf7-FV-suK">
+                                <rect key="frame" x="110" y="293" width="93" height="32"/>
+                                <buttonCell key="cell" type="push" title="Atualizar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6dR-T9-Dc4">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="changeMonth:" target="8nI-sk-rTh" id="L1q-wf-Ezb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="5fv-pY-qaA" firstAttribute="top" secondItem="cXr-Wd-g6H" secondAttribute="bottom" constant="20" id="3gG-Ub-Xbq"/>
+                            <constraint firstItem="Yf7-FV-suK" firstAttribute="leading" secondItem="cXr-Wd-g6H" secondAttribute="trailing" constant="20" id="54A-Hy-tw1"/>
                             <constraint firstItem="T1x-ZI-UxN" firstAttribute="top" secondItem="oSt-kn-SLh" secondAttribute="top" constant="20" id="B4i-Mw-dUs"/>
                             <constraint firstAttribute="trailing" secondItem="T1x-ZI-UxN" secondAttribute="trailing" constant="20" id="Bvo-Pf-jTu"/>
                             <constraint firstItem="Bpt-sP-gCs" firstAttribute="leading" secondItem="oSt-kn-SLh" secondAttribute="leading" constant="20" id="IxS-yc-66W"/>
-                            <constraint firstItem="5fv-pY-qaA" firstAttribute="top" secondItem="Bpt-sP-gCs" secondAttribute="bottom" constant="20" id="Nvg-R7-vQf"/>
+                            <constraint firstItem="cXr-Wd-g6H" firstAttribute="top" secondItem="Bpt-sP-gCs" secondAttribute="bottom" constant="20" id="Jo4-Iz-45f"/>
                             <constraint firstItem="Bpt-sP-gCs" firstAttribute="top" secondItem="T1x-ZI-UxN" secondAttribute="bottom" constant="20" id="S8F-lr-6ZP"/>
+                            <constraint firstItem="Yf7-FV-suK" firstAttribute="centerY" secondItem="cXr-Wd-g6H" secondAttribute="centerY" id="Sfb-yD-h2w"/>
                             <constraint firstItem="5fv-pY-qaA" firstAttribute="leading" secondItem="oSt-kn-SLh" secondAttribute="leading" constant="20" id="WPS-Ds-CVJ"/>
                             <constraint firstAttribute="trailing" secondItem="Bpt-sP-gCs" secondAttribute="trailing" constant="20" id="WWr-Pr-B4v"/>
+                            <constraint firstItem="cXr-Wd-g6H" firstAttribute="leading" secondItem="oSt-kn-SLh" secondAttribute="leading" constant="20" id="Ykg-cO-O2c"/>
                             <constraint firstAttribute="bottom" secondItem="5fv-pY-qaA" secondAttribute="bottom" constant="20" id="iml-YE-fgb"/>
                             <constraint firstItem="bhX-Py-hzJ" firstAttribute="centerY" secondItem="oSt-kn-SLh" secondAttribute="centerY" id="lPE-0U-HQt"/>
                             <constraint firstItem="bhX-Py-hzJ" firstAttribute="centerX" secondItem="oSt-kn-SLh" secondAttribute="centerX" id="npb-f1-3bi"/>
@@ -184,16 +213,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="datePicker" destination="cXr-Wd-g6H" id="qxJ-h7-cgA"/>
                         <outlet property="hoursTextField" destination="Bpt-sP-gCs" id="LvP-DT-j09"/>
                         <outlet property="infoTextField" destination="bhX-Py-hzJ" id="WsH-qB-yXf"/>
                         <outlet property="nameTextField" destination="T1x-ZI-UxN" id="TZo-uK-cGR"/>
                         <outlet property="scrollView" destination="5fv-pY-qaA" id="hqk-UW-Ec9"/>
                         <outlet property="tableView" destination="IPz-9f-9ax" id="EV6-tz-jnx"/>
+                        <outlet property="updateButton" destination="Yf7-FV-suK" id="1VY-Uq-Xxk"/>
                     </connections>
                 </viewController>
                 <customObject id="5Ih-S0-hY9" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136" y="166"/>
+            <point key="canvasLocation" x="136" y="206"/>
         </scene>
     </scenes>
 </document>

@@ -13,6 +13,8 @@ final class MirrorViewController: NSViewController, MirrorView {
 	@IBOutlet weak var hoursTextField: NSTextField!
 	@IBOutlet weak var tableView: NSTableView!
 	@IBOutlet weak var scrollView: NSScrollView!
+	@IBOutlet weak var datePicker: NSDatePicker!
+	@IBOutlet weak var updateButton: NSView!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -29,8 +31,25 @@ final class MirrorViewController: NSViewController, MirrorView {
 		presenter.viewDidLoad()
 	}
 
+	@IBAction func changeMonth(_ sender: Any) {
+		let date = datePicker.dateValue
+		let calendar = Calendar.current
+		let month = calendar.component(.month, from: date)
+		let year = calendar.component(.year, from: date)
+
+		presenter.mirrorFor(month: month, year: year)
+	}
+
 	func show(mirror: AhgoraMirror) {
 		self.mirrorDays = mirror.days
+
+		let dateFormatter = DateFormatter()
+		dateFormatter.dateFormat = "yyyy-MM-dd"
+
+		let minDate = dateFormatter.date(from: mirror.employee.admissionDate) ?? Date()
+
+		datePicker.minDate = minDate
+
 		nameTextField.stringValue = mirror.employee.name
 		hoursTextField.stringValue = mirror.results.map { "\($0.type): \($0.value)" }.joined(separator: " | ")
 
@@ -38,6 +57,8 @@ final class MirrorViewController: NSViewController, MirrorView {
 		nameTextField.isHidden = false
 		hoursTextField.isHidden = false
 		scrollView.isHidden = false
+		datePicker.isHidden = false
+		updateButton.isHidden = false
 
 		tableView.reloadData()
 	}
@@ -48,6 +69,8 @@ final class MirrorViewController: NSViewController, MirrorView {
 		hoursTextField.isHidden = true
 		scrollView.isHidden = true
 		infoTextField.isHidden = false
+		datePicker.isHidden = true
+		updateButton.isHidden = true
 	}
 
 	func showError(message: String) {

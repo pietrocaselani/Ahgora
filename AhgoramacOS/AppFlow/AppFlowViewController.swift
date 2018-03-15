@@ -27,6 +27,8 @@ final class AppFlowViewController: NSTabViewController, AppFlowView {
 				self?.addTabViewItem(tabItem)
 		}
 
+		self.removeChildViewController(at: 0)
+
 		if pages.count > 0 {
 			self.selectedTabViewItemIndex = 0
 		}
