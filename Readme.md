@@ -26,4 +26,4 @@ Run the following commands
 
 <img src="https://raw.githubusercontent.com/pietrocaselani/Ahgora/master/screenshots/macos_punch.png" width="450"/>
 <img src="https://raw.githubusercontent.com/pietrocaselani/Ahgora/master/screenshots/macos_mirror.png" width="450"/>
-<img src="https://raw.githubusercontent.com/pietrocaselani/Ahgora/master/screenshots/macos_configs.png" width="450"/>
+<img src="https://raw.githubusercontent.com/pietrocaselani/Ahgora/master/screenshots/macos_configs2.png" width="450"/>
