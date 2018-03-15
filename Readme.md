@@ -18,4 +18,12 @@ Run the following commands
 
 * Better design (iOS)
 * Schedule local notifications to warn the user about the work hours limit (iOS)
-* Create a macOS app (macOS)
+* Schedule local notifications to warn the user about the work hours limit (macOS)
+
+# Screenshots
+
+## macOS
+
+<img src="https://raw.githubusercontent.com/pietrocaselani/Ahgora/master/screenshots/macos_punch.png" width="450"/>
+<img src="https://raw.githubusercontent.com/pietrocaselani/Ahgora/master/screenshots/macos_mirror.png" width="450"/>
+<img src="https://raw.githubusercontent.com/pietrocaselani/Ahgora/master/screenshots/macos_configs.png" width="450"/>
