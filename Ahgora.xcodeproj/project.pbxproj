@@ -22,7 +22,6 @@
 		4F20F5612053265A00FD7F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F20F5602053265A00FD7F10 /* Assets.xcassets */; };
 		4F20F5642053265A00FD7F10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F20F5622053265A00FD7F10 /* LaunchScreen.storyboard */; };
 		4F20F579205326CE00FD7F10 /* AhgoraCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F20F570205326CE00FD7F10 /* AhgoraCore.framework */; };
-		4F20F57E205326CE00FD7F10 /* AhgoraCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20F57D205326CE00FD7F10 /* AhgoraCoreTests.swift */; };
 		4F20F580205326CE00FD7F10 /* AhgoraCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F20F572205326CE00FD7F10 /* AhgoraCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F20F589205326E200FD7F10 /* AppFlowContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20F588205326E200FD7F10 /* AppFlowContract.swift */; };
 		4F20F58C2053275500FD7F10 /* ModulePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20F58B2053275500FD7F10 /* ModulePage.swift */; };
@@ -36,6 +35,7 @@
 		4F20F5A72053293500FD7F10 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20F58D2053276300FD7F10 /* BaseView.swift */; };
 		4F20F5A82053293800FD7F10 /* AppFlowContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20F588205326E200FD7F10 /* AppFlowContract.swift */; };
 		4F20F5A92053293800FD7F10 /* AppFlowDefaultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20F58F2053280E00FD7F10 /* AppFlowDefaultPresenter.swift */; };
+		4F3634282062FFA00045CDCA /* mirror.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FB45FB520626F4700400F4B /* mirror.json */; };
 		4F56580920587BE600D3D56B /* Punch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F56580820587BE600D3D56B /* Punch.storyboard */; };
 		4F56580B20587BF400D3D56B /* PunchModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56580A20587BF400D3D56B /* PunchModule.swift */; };
 		4F56580D20587BFF00D3D56B /* PunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56580C20587BFF00D3D56B /* PunchViewController.swift */; };
@@ -56,6 +56,10 @@
 		4FAA25BB2056E4370006735A /* SettingsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA25BA2056E4370006735A /* SettingsModule.swift */; };
 		4FAA25BD2056E4BE0006735A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FAA25BC2056E4BE0006735A /* Settings.storyboard */; };
 		4FAA25BE2056E5700006735A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9B1662055F2ED00FD28F1 /* Environment.swift */; };
+		4FB45FB320626BED00400F4B /* MirrorDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB45FB220626BED00400F4B /* MirrorDayTests.swift */; };
+		4FB45FB620626F4700400F4B /* mirror.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FB45FB520626F4700400F4B /* mirror.json */; };
+		4FB45FB8206272DB00400F4B /* MirrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB45FB7206272DB00400F4B /* MirrorTests.swift */; };
+		4FB45FBA206275A100400F4B /* JSONParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB45FB9206275A100400F4B /* JSONParse.swift */; };
 		4FF9B10E2055CB7600FD28F1 /* SettingsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9B10D2055CB7600FD28F1 /* SettingsContract.swift */; };
 		4FF9B10F2055CB7600FD28F1 /* SettingsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9B10D2055CB7600FD28F1 /* SettingsContract.swift */; };
 		4FF9B1112055CBBA00FD28F1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9B1102055CBBA00FD28F1 /* AppState.swift */; };
@@ -140,6 +144,10 @@
 		4FF9B19E205627A500FD28F1 /* PunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9B19D205627A500FD28F1 /* PunchViewController.swift */; };
 		4FF9B1A02056289000FD28F1 /* Punch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9B19F2056289000FD28F1 /* Punch.storyboard */; };
 		4FF9B1A220562A1000FD28F1 /* PunchModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9B1A120562A1000FD28F1 /* PunchModule.swift */; };
+		4FFBE7802061A836007D6770 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFBE77F2061A836007D6770 /* StringExtensions.swift */; };
+		4FFBE7812061A836007D6770 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFBE77F2061A836007D6770 /* StringExtensions.swift */; };
+		4FFBE7832061A8DB007D6770 /* MirrorResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFBE7822061A8DB007D6770 /* MirrorResultType.swift */; };
+		4FFBE7842061A8DB007D6770 /* MirrorResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFBE7822061A8DB007D6770 /* MirrorResultType.swift */; };
 		55C506B5FE7984B38DF65D16 /* Pods_AhgoraCoreiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD95EE600E634E2994F6A8E /* Pods_AhgoraCoreiOS.framework */; };
 		89960977011DEAF42838EB43 /* Pods_AhgoraCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C663D4F335CB736D2214D959 /* Pods_AhgoraCore.framework */; };
 		F07F908CDAACADAD14E493D4 /* Pods_AhgoraCoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E20F0E69A8B757758DF578A /* Pods_AhgoraCoreTests.framework */; };
@@ -216,7 +224,6 @@
 		4F20F572205326CE00FD7F10 /* AhgoraCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AhgoraCore.h; sourceTree = "<group>"; };
 		4F20F573205326CE00FD7F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F20F578205326CE00FD7F10 /* AhgoraCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AhgoraCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F20F57D205326CE00FD7F10 /* AhgoraCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AhgoraCoreTests.swift; sourceTree = "<group>"; };
 		4F20F57F205326CE00FD7F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F20F588205326E200FD7F10 /* AppFlowContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowContract.swift; sourceTree = "<group>"; };
 		4F20F58B2053275500FD7F10 /* ModulePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulePage.swift; sourceTree = "<group>"; };
@@ -246,6 +253,11 @@
 		4FAA25B82056E4290006735A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = AhgoramacOS/Settings/SettingsViewController.swift; sourceTree = SOURCE_ROOT; };
 		4FAA25BA2056E4370006735A /* SettingsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModule.swift; sourceTree = "<group>"; };
 		4FAA25BC2056E4BE0006735A /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		4FB45FB120626BED00400F4B /* AhgoraCoreTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AhgoraCoreTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		4FB45FB220626BED00400F4B /* MirrorDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorDayTests.swift; sourceTree = "<group>"; };
+		4FB45FB520626F4700400F4B /* mirror.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mirror.json; sourceTree = "<group>"; };
+		4FB45FB7206272DB00400F4B /* MirrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorTests.swift; sourceTree = "<group>"; };
+		4FB45FB9206275A100400F4B /* JSONParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParse.swift; sourceTree = "<group>"; };
 		4FF9B10D2055CB7600FD28F1 /* SettingsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsContract.swift; sourceTree = "<group>"; };
 		4FF9B1102055CBBA00FD28F1 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		4FF9B1132055CBDA00FD28F1 /* CompanyCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCredentials.swift; sourceTree = "<group>"; };
@@ -294,6 +306,8 @@
 		4FF9B19D205627A500FD28F1 /* PunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchViewController.swift; sourceTree = "<group>"; };
 		4FF9B19F2056289000FD28F1 /* Punch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Punch.storyboard; sourceTree = "<group>"; };
 		4FF9B1A120562A1000FD28F1 /* PunchModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchModule.swift; sourceTree = "<group>"; };
+		4FFBE77F2061A836007D6770 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		4FFBE7822061A8DB007D6770 /* MirrorResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorResultType.swift; sourceTree = "<group>"; };
 		523741997D7C6239C1BE18BF /* Pods-Ahgora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ahgora.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ahgora/Pods-Ahgora.debug.xcconfig"; sourceTree = "<group>"; };
 		584DC882B40461C88603E285 /* Pods-AhgoraCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhgoraCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AhgoraCore/Pods-AhgoraCore.debug.xcconfig"; sourceTree = "<group>"; };
 		6818FC6C05D31330204E2BE2 /* Pods-AhgoraMacOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhgoraMacOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AhgoraMacOS/Pods-AhgoraMacOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -360,6 +374,7 @@
 			children = (
 				4FF9B1292055D40900FD28F1 /* CompletableExtensions.swift */,
 				4FF9B17720560C3E00FD28F1 /* JSONExtensions.swift */,
+				4FFBE77F2061A836007D6770 /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -446,7 +461,9 @@
 		4F20F57C205326CE00FD7F10 /* AhgoraCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				4F20F57D205326CE00FD7F10 /* AhgoraCoreTests.swift */,
+				4FB45FB420626F3100400F4B /* JSONs */,
+				4FB45FB120626BED00400F4B /* AhgoraCoreTests-Bridging-Header.h */,
+				4FB45FB020626BC500400F4B /* Mirror */,
 				4F20F57F205326CE00FD7F10 /* Info.plist */,
 			);
 			path = AhgoraCoreTests;
@@ -573,6 +590,24 @@
 			path = Mirror;
 			sourceTree = "<group>";
 		};
+		4FB45FB020626BC500400F4B /* Mirror */ = {
+			isa = PBXGroup;
+			children = (
+				4FB45FB220626BED00400F4B /* MirrorDayTests.swift */,
+				4FB45FB7206272DB00400F4B /* MirrorTests.swift */,
+			);
+			path = Mirror;
+			sourceTree = "<group>";
+		};
+		4FB45FB420626F3100400F4B /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				4FB45FB520626F4700400F4B /* mirror.json */,
+				4FB45FB9206275A100400F4B /* JSONParse.swift */,
+			);
+			path = JSONs;
+			sourceTree = "<group>";
+		};
 		4FF9B10C2055CB4200FD28F1 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -608,6 +643,7 @@
 				4FF9B17A20560D1700FD28F1 /* MirrorDays.swift */,
 				4FF9B1382055DE0800FD28F1 /* MirrorEmployee.swift */,
 				4FF9B13B2055DE8A00FD28F1 /* MirrorResult.swift */,
+				4FFBE7822061A8DB007D6770 /* MirrorResultType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -852,11 +888,12 @@
 					};
 					4F20F577205326CE00FD7F10 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					4F20F5982053292900FD7F10 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					4FAA25712056D8470006735A = {
 						CreatedOnToolsVersion = 9.2;
@@ -911,6 +948,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FB45FB620626F4700400F4B /* mirror.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -930,6 +968,7 @@
 				4FAA25772056D8470006735A /* Assets.xcassets in Resources */,
 				4FAA25B32056DA2C0006735A /* AppFlow.storyboard in Resources */,
 				4FAA25BD2056E4BE0006735A /* Settings.storyboard in Resources */,
+				4F3634282062FFA00045CDCA /* mirror.json in Resources */,
 				4F648E012057437300FD03C9 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -996,6 +1035,7 @@
 				"${BUILT_PRODUCTS_DIR}/Moya-iOS/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result-iOS/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/TimeIntervals-iOS/TimeIntervals.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1003,6 +1043,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TimeIntervals.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1020,6 +1061,7 @@
 				"${BUILT_PRODUCTS_DIR}/Moya-macOS/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result-macOS/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-macOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/TimeIntervals-macOS/TimeIntervals.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1027,6 +1069,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TimeIntervals.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1060,6 +1103,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire-macOS/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya-macOS/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result-macOS/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/TimeIntervals-macOS/TimeIntervals.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1068,6 +1112,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TimeIntervals.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1231,12 +1276,14 @@
 				4F20F58C2053275500FD7F10 /* ModulePage.swift in Sources */,
 				4FF9B1472055E45800FD28F1 /* AhgoraAPIProvider.swift in Sources */,
 				4FF9B1922056235A00FD28F1 /* AhgoraDateFormatter.swift in Sources */,
+				4FFBE7802061A836007D6770 /* StringExtensions.swift in Sources */,
 				4F20F5902053280E00FD7F10 /* AppFlowDefaultPresenter.swift in Sources */,
 				4FF9B13C2055DE8A00FD28F1 /* MirrorResult.swift in Sources */,
 				4FF9B10E2055CB7600FD28F1 /* SettingsContract.swift in Sources */,
 				4FF9B1142055CBDA00FD28F1 /* CompanyCredentials.swift in Sources */,
 				4FF9B1332055DD8D00FD28F1 /* Mirror.swift in Sources */,
 				4FF9B1842056185F00FD28F1 /* MirrorDayPunch.swift in Sources */,
+				4FFBE7832061A8DB007D6770 /* MirrorResultType.swift in Sources */,
 				4FF9B11B2055CE7200FD28F1 /* AppStateObservable.swift in Sources */,
 				4F1354F020532D5C00D6AD8B /* DateProvider.swift in Sources */,
 				4FF9B18F205622FA00FD28F1 /* PunchResult.swift in Sources */,
@@ -1253,7 +1300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F20F57E205326CE00FD7F10 /* AhgoraCoreTests.swift in Sources */,
+				4FB45FBA206275A100400F4B /* JSONParse.swift in Sources */,
+				4FB45FB8206272DB00400F4B /* MirrorTests.swift in Sources */,
+				4FB45FB320626BED00400F4B /* MirrorDayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1289,12 +1338,14 @@
 				4F20F5A62053293500FD7F10 /* ModulePage.swift in Sources */,
 				4FF9B1482055E45800FD28F1 /* AhgoraAPIProvider.swift in Sources */,
 				4FF9B1932056235A00FD28F1 /* AhgoraDateFormatter.swift in Sources */,
+				4FFBE7812061A836007D6770 /* StringExtensions.swift in Sources */,
 				4F20F5A92053293800FD7F10 /* AppFlowDefaultPresenter.swift in Sources */,
 				4FF9B13D2055DE8A00FD28F1 /* MirrorResult.swift in Sources */,
 				4FF9B10F2055CB7600FD28F1 /* SettingsContract.swift in Sources */,
 				4FF9B1152055CBDA00FD28F1 /* CompanyCredentials.swift in Sources */,
 				4FF9B1342055DD8D00FD28F1 /* Mirror.swift in Sources */,
 				4FF9B1852056185F00FD28F1 /* MirrorDayPunch.swift in Sources */,
+				4FFBE7842061A8DB007D6770 /* MirrorResultType.swift in Sources */,
 				4FF9B11C2055CE7200FD28F1 /* AppStateObservable.swift in Sources */,
 				4F1354F120532D5C00D6AD8B /* DateProvider.swift in Sources */,
 				4FF9B190205622FA00FD28F1 /* PunchResult.swift in Sources */,
@@ -1571,6 +1622,7 @@
 			baseConfigurationReference = 922CE8B2F70F10FD3A60A92C /* Pods-AhgoraCoreTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1581,6 +1633,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.pietrocaselani.AhgoraCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "AhgoraCoreTests/AhgoraCoreTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -1590,6 +1644,7 @@
 			baseConfigurationReference = BC4941A25D1C5D982C19D22F /* Pods-AhgoraCoreTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1600,6 +1655,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.pietrocaselani.AhgoraCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "AhgoraCoreTests/AhgoraCoreTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -1609,10 +1665,10 @@
 			baseConfigurationReference = 4F18894362DCC42E24A04A50 /* Pods-AhgoraCoreiOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = B5RPM7SE3L;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1621,6 +1677,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.pietrocaselani.ahgoracoreios;
 				PRODUCT_NAME = AhgoraCore;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1634,10 +1691,10 @@
 			baseConfigurationReference = 823AAFC8C5EA14590AE2F122 /* Pods-AhgoraCoreiOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = B5RPM7SE3L;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1646,6 +1703,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.pietrocaselani.ahgoracoreios;
 				PRODUCT_NAME = AhgoraCore;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

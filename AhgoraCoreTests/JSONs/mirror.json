@@ -1,0 +1,1249 @@
+{
+    "empresa": {
+        "empresa": "a131865",
+        "nome": "Involves Ltda - EPP",
+        "inicia_dia": "25",
+        "inicia_mes_anterior": true,
+        "justifications_enabled": true,
+        "notificacoes_enabled": false
+    },
+    "funcionario": {
+        "nome": "Rafael de Sousa Leandro",
+        "departamento": "Desenvolvimento",
+        "cargo": "Desenvolvedor III",
+        "matricula": "164",
+        "dt_admissao": "2017-10-10",
+        "faceid_filename": ""
+    },
+    "resultado": [
+        {
+            "tipo": "Horas Trabalhadas",
+            "valor": "13129",
+            "em_dia": false
+        },
+        {
+            "tipo": "Horas Previstas",
+            "valor": "16000",
+            "em_dia": false
+        },
+        {
+            "tipo": "Dia de Florianópolis",
+            "valor": "0800",
+            "em_dia": false
+        },
+        {
+            "tipo": "SALDO",
+            "valor": "-0258",
+            "em_dia": false
+        },
+        {
+            "tipo": "Banco de horas acumulado até  Fevereiro/2018",
+            "valor": "-0250",
+            "em_dia": false
+        },
+        {
+            "tipo": "Banco de horas no mês",
+            "valor": "-0008",
+            "em_dia": false
+        }
+    ],
+    "dias": {
+        "2018-02-25": {
+            "batidas": [],
+            "resultado": [],
+            "status": [],
+            "justificativa": []
+        },
+        "2018-02-26": {
+            "batidas": [
+                {
+                    "hora": "0846",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1208",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1308",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1643",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1659",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1823",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0821"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0658"
+                },
+                {
+                    "tipo": "Banco de horas",
+                    "valor": "0021"
+                }
+            ],
+            "status": [
+                "batidas"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-02-27": {
+            "batidas": [
+                {
+                    "hora": "0937",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1204",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1346",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "2001",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0842"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0623"
+                },
+                {
+                    "tipo": "Banco de horas",
+                    "valor": "0042"
+                }
+            ],
+            "status": [
+                "batidas"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-02-28": {
+            "batidas": [
+                {
+                    "hora": "0940",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1204",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1324",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1810",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0710"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0620"
+                },
+                {
+                    "tipo": "Banco de horas",
+                    "valor": "-0050"
+                }
+            ],
+            "status": [
+                "batidas"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-01": {
+            "batidas": [
+                {
+                    "hora": "0947",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1116",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1217",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1820",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0732"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0529"
+                },
+                {
+                    "tipo": "Banco de horas",
+                    "valor": "-0028"
+                }
+            ],
+            "status": [
+                "batidas"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-02": {
+            "batidas": [
+                {
+                    "hora": "1030",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1206",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1324",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1914",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0726"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0530"
+                },
+                {
+                    "tipo": "Banco de horas",
+                    "valor": "-0034"
+                }
+            ],
+            "status": [
+                "batidas"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-03": {
+            "batidas": [],
+            "resultado": [],
+            "status": [],
+            "justificativa": []
+        },
+        "2018-03-04": {
+            "batidas": [],
+            "resultado": [],
+            "status": [],
+            "justificativa": []
+        },
+        "2018-03-05": {
+            "batidas": [
+                {
+                    "hora": "0903",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1218",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1351",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1908",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0832"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0657"
+                },
+                {
+                    "tipo": "Banco de horas",
+                    "valor": "0032"
+                }
+            ],
+            "status": [
+                "batidas"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-06": {
+            "batidas": [
+                {
+                    "hora": "0825",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1202",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1301",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1725",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0801"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0700"
+                },
+                {
+                    "tipo": "Banco de horas",
+                    "valor": "0001"
+                }
+            ],
+            "status": [
+                "batidas"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-07": {
+            "batidas": [
+                {
+                    "hora": "0832",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1207",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1312",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1807",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0830"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0728"
+                },
+                {
+                    "tipo": "Banco de horas",
+                    "valor": "0030"
+                }
+            ],
+            "status": [
+                "batidas"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-08": {
+            "batidas": [
+                {
+                    "hora": "0959",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1203",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1322",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1756",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0638"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0557"
+                },
+                {
+                    "tipo": "Banco de horas",
+                    "valor": "-0122"
+                }
+            ],
+            "status": [
+                "batidas"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-09": {
+            "batidas": [
+                {
+                    "hora": "0911",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1205",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1410",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1828",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0712"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0639"
+                },
+                {
+                    "tipo": "Banco de horas",
+                    "valor": "-0048"
+                }
+            ],
+            "status": [
+                "batidas"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-10": {
+            "batidas": [],
+            "resultado": [],
+            "status": [],
+            "justificativa": []
+        },
+        "2018-03-11": {
+            "batidas": [],
+            "resultado": [],
+            "status": [],
+            "justificativa": []
+        },
+        "2018-03-12": {
+            "batidas": [
+                {
+                    "hora": "0912",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1203",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1305",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1900",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0846"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0648"
+                },
+                {
+                    "tipo": "Banco de horas",
+                    "valor": "0046"
+                }
+            ],
+            "status": [
+                "batidas"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-13": {
+            "batidas": [
+                {
+                    "hora": "1010",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1201",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1313",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1813",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0651"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0550"
+                },
+                {
+                    "tipo": "Banco de horas",
+                    "valor": "-0109"
+                }
+            ],
+            "status": [
+                "batidas"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-14": {
+            "batidas": [
+                {
+                    "hora": "0926",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1158",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1314",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1917",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0835"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0632"
+                },
+                {
+                    "tipo": "Banco de horas",
+                    "valor": "0035"
+                }
+            ],
+            "status": [
+                "batidas"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-15": {
+            "batidas": [
+                {
+                    "hora": "0922",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1203",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1310",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1842",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0813"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0638"
+                },
+                {
+                    "tipo": "Banco de horas",
+                    "valor": "0013"
+                }
+            ],
+            "status": [
+                "batidas"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-16": {
+            "batidas": [
+                {
+                    "hora": "0908",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1207",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1301",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1907",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0905"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0652"
+                },
+                {
+                    "tipo": "Banco de horas",
+                    "valor": "0105"
+                }
+            ],
+            "status": [
+                "batidas"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-17": {
+            "batidas": [],
+            "resultado": [],
+            "status": [],
+            "justificativa": []
+        },
+        "2018-03-18": {
+            "batidas": [],
+            "resultado": [],
+            "status": [],
+            "justificativa": []
+        },
+        "2018-03-19": {
+            "batidas": [
+                {
+                    "hora": "0935",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1235",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1341",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1859",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0818"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0625"
+                },
+                {
+                    "tipo": "Banco de horas",
+                    "valor": "0018"
+                }
+            ],
+            "status": [
+                "batidas"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-20": {
+            "batidas": [
+                {
+                    "hora": "0925",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1302",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                },
+                {
+                    "hora": "1406",
+                    "tipo": "L",
+                    "offline": false,
+                    "equipamento": "COMPUTADOR PADRÃO",
+                    "location": false,
+                    "id_photo": ""
+                }
+            ],
+            "resultado": [
+                {
+                    "tipo": "Horas Trabalhadas",
+                    "valor": "0337"
+                },
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Expediente",
+                    "valor": "0235"
+                }
+            ],
+            "status": [],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-21": {
+            "resultado": [
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                }
+            ],
+            "batidas": [],
+            "status": [],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-22": {
+            "resultado": [
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                }
+            ],
+            "batidas": [],
+            "status": [],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-23": {
+            "resultado": [
+                {
+                    "tipo": "Horas Previstas",
+                    "valor": "0800"
+                },
+                {
+                    "tipo": "Dia de Florianópolis",
+                    "valor": "0800"
+                }
+            ],
+            "batidas": [],
+            "status": [
+                "afast"
+            ],
+            "HORAS_CONTRATUAIS": [
+                "08:00",
+                "12:00",
+                "14:00",
+                "18:00"
+            ],
+            "justificativa": []
+        },
+        "2018-03-24": {
+            "batidas": [],
+            "resultado": [],
+            "status": [
+                "afast"
+            ],
+            "justificativa": []
+        }
+    }
+}

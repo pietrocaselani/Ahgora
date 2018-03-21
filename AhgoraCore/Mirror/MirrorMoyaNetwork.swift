@@ -19,10 +19,6 @@ public final class MirrorMoyaNetwork: MirrorNetwork {
 											 employeePassword: employee.password)
 
 		let target = AhgoraAPI.mirror(parameters: parameters)
-		
-		return provider.ahgora.rx.request(target)
-			.do(onSuccess: { response in
-				print(response)
-			}).map(Mirror.self)
+		return provider.ahgora.rx.request(target).map(Mirror.self)
 	}
 }

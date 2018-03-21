@@ -1,5 +1,5 @@
 public struct MirrorResult: Decodable {
-	public let type: String
+	public let type: MirrorResultType
 	public let value: String
 	public let valid: Bool
 
@@ -12,8 +12,16 @@ public struct MirrorResult: Decodable {
 	public init(from decoder: Decoder) throws {
 		let container = try decoder.container(keyedBy: CodingKeys.self)
 
-		self.type = try container.decode(String.self, forKey: .type)
-		self.value = try container.decode(String.self, forKey: .value)
+		let jsonType = try container.decode(String.self, forKey: .type)
+		var valueJSON = try container.decode(String.self, forKey: .value)
 		self.valid = try container.decode(Bool.self, forKey: .valid)
+
+		self.type = MirrorResultType.create(from: jsonType)
+
+		if type == .workedHours {
+			valueJSON.formatAsAhgoraHour()
+		}
+
+		self.value = valueJSON
 	}
 }

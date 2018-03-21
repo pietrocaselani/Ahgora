@@ -103,9 +103,12 @@ extension MirrorViewController: NSTableViewDelegate {
 			cellValue = mirrorDay.punches.map { $0.hour }.joined(separator: ", ")
 		} else if tableColumn == tableView.tableColumns[2] {
 			cellIdentifier = "mirrorResultCell"
-			cellValue = mirrorDay.results.map { "\($0.type): \($0.value)" }.joined(separator: " | ")
+			cellValue = mirrorDay.results.map { "\($0.type.name): \($0.value)" }.joined(separator: " | ")
+		} else if tableColumn == tableView.tableColumns[3] {
+			cellIdentifier = "mirrorDayExitHour"
+			cellValue = mirrorDay.exitHour
 		} else {
-			fatalError("WTF!")
+			Swift.fatalError("WTF!")
 		}
 
 		guard let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: cellIdentifier), owner: nil) as? NSTableCellView else {

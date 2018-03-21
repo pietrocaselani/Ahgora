@@ -1,6 +1,4 @@
 import UIKit
 import AhgoraCore
 
-extension UIViewController: BaseView {
-	
-}
+extension UIViewController: BaseView {}
