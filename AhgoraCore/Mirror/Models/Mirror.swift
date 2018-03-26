@@ -16,7 +16,7 @@ public struct Mirror: Decodable {
 
 		self.company = try container.decode(MirrorCompany.self, forKey: .company)
 		self.employee = try container.decode(MirrorEmployee.self, forKey: .employee)
-		self.results = try container.decode([MirrorResult].self, forKey: .results)
+		self.results = try container.decodeIfPresent([MirrorResult].self, forKey: .results) ?? [MirrorResult]()
 		self.days = try container.decode(MirrorDays.self, forKey: .days)
 	}
 }
