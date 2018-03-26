@@ -5,7 +5,7 @@ public protocol MirrorView: BaseView {
 
 	func showMissingCredentials()
 	func showError(message: String)
-	func show(mirror: Mirror)
+	func show(mirror: Mirror, for date: Date)
 }
 
 public protocol MirrorInteractor {

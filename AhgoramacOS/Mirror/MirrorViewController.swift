@@ -40,26 +40,28 @@ final class MirrorViewController: NSViewController, MirrorView {
 		presenter.mirrorFor(month: month, year: year)
 	}
 
-	func show(mirror: AhgoraMirror) {
+	func show(mirror: AhgoraMirror, for date: Date) {
 		self.mirrorDays = mirror.days
-
+		
+		let today = Date()
 		let dateFormatter = DateFormatter()
 		dateFormatter.dateFormat = "yyyy-MM-dd"
-
-		let minDate = dateFormatter.date(from: mirror.employee.admissionDate) ?? Date()
-
+		
+		let minDate = dateFormatter.date(from: mirror.employee.admissionDate) ?? today
+		
 		datePicker.minDate = minDate
-
+		datePicker.dateValue = date
+		
 		nameTextField.stringValue = mirror.employee.name
 		hoursTextField.stringValue = mirror.results.map { "\($0.type): \($0.value)" }.joined(separator: " | ")
-
+		
 		infoTextField.isHidden = true
 		nameTextField.isHidden = false
 		hoursTextField.isHidden = false
 		scrollView.isHidden = false
 		datePicker.isHidden = false
 		updateButton.isHidden = false
-
+		
 		tableView.reloadData()
 	}
 

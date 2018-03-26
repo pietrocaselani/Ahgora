@@ -3,6 +3,7 @@ import RxSwift
 public final class SettingsUserDefaultsDataSource: SettingsDataSource {
 	private static let loggedKey = "settingsUserDefaultsDataSourceLogged"
 	private static let credentialsKey = "settingsUserDefaultsDataSourceCredentials"
+	private static let lastDayOfMonthKey = "settingsUserDefaultsDataSourceLastDayOfMonth"
 
 	private let output: AppStateOutput
 	private let userDefaults: UserDefaults
@@ -20,22 +21,27 @@ public final class SettingsUserDefaultsDataSource: SettingsDataSource {
 		let logged = userDefaults.bool(forKey: SettingsUserDefaultsDataSource.loggedKey)
 
 		guard logged else {
-			return AppState.notLogged
+			return AppState.initial
 		}
 
 		guard let credentialsData = userDefaults.data(forKey: SettingsUserDefaultsDataSource.credentialsKey) else {
-			return AppState.notLogged
+			return AppState.initial
 		}
 
 		guard let secureCredentials = NSKeyedUnarchiver.unarchiveObject(with: credentialsData) as? SecurePersistableCredentials else {
-			return AppState.notLogged
+			return AppState.initial
+		}
+
+		var lastDayOfMonth = userDefaults.integer(forKey: SettingsUserDefaultsDataSource.lastDayOfMonthKey)
+		if lastDayOfMonth <= 0 {
+			lastDayOfMonth = AppState.lastDayOfMonthDefault
 		}
 
 		let companyCredentials = CompanyCredentials(tokenIdentifier: secureCredentials.companyTokenIdentifier, identifier: secureCredentials.companyIdentifier)
 		let employeeCredentials = EmployeeCredentials(registration: secureCredentials.employeeRegistration, password: secureCredentials.employeePassword)
 		let credentials = Credentials(company: companyCredentials, employee: employeeCredentials)
 
-		return AppState.logged(credentials: credentials)
+		return AppState(loginState: LoginState.logged(credentials: credentials), lastDayOfMonth: lastDayOfMonth)
 	}
 
 	public func fetchAppState() -> Observable<AppState> {
@@ -64,7 +70,9 @@ public final class SettingsUserDefaultsDataSource: SettingsDataSource {
 	}
 
 	private func saveOnUserDefaults(appState: AppState) {
-		switch appState {
+		userDefaults.set(appState.lastDayOfMonth, forKey: SettingsUserDefaultsDataSource.lastDayOfMonthKey)
+
+		switch appState.loginState {
 		case .notLogged:
 			userDefaults.set(false, forKey: SettingsUserDefaultsDataSource.loggedKey)
 		case .logged(let credentials):

@@ -18,7 +18,7 @@ public final class MirrorDefaultPresenter: MirrorPresenter {
 
 	public func viewDidLoad() {
 		appStateObservable.observe()
-			.catchErrorJustReturn(AppState.notLogged)
+			.catchErrorJustReturn(AppState.initial)
 			.observeOn(MainScheduler.instance)
 			.subscribe(onNext: { [weak self] appState in
 				guard let strongSelf = self else {
@@ -31,7 +31,7 @@ public final class MirrorDefaultPresenter: MirrorPresenter {
 	}
 
 	public func mirrorFor(month: Int, year: Int) {
-		if case .logged(let credentials) = appState {
+		if case .logged(let credentials) = appState.loginState {
 			mirrorFor(month: month, year: year, credentials: credentials)
 		} else if let view = view {
 			view.showMissingCredentials()
@@ -43,7 +43,7 @@ public final class MirrorDefaultPresenter: MirrorPresenter {
 
 		guard let view = view else { return }
 
-		switch appState {
+		switch appState.loginState {
 		case .notLogged:
 			view.showMissingCredentials()
 		case .logged(let credentials):
@@ -58,10 +58,32 @@ public final class MirrorDefaultPresenter: MirrorPresenter {
 	}
 
 	public func mirrorFor(month: Int, year: Int, credentials: Credentials) {
+		let today = dateProvider.now
+
+		let components = Calendar.current.dateComponents([.year, .month, .day], from: today)
+		let day = components.value(for: .day) ?? 1
+		var month = components.value(for: .month) ?? 0
+		var year = components.value(for: .year) ?? 0
+
+		if day >= appState.lastDayOfMonth {
+			if month == 12 {
+				month = 1
+				year += 1
+			} else {
+				month += 1
+			}
+		}
+
+		let dateFormatter = DateFormatter()
+		dateFormatter.dateFormat = "yyyy-MM-dd"
+		let date = dateFormatter.date(from: "\(year)-\(month)-\(day)") ?? today
+
 		interactor.mirrorFor(month: month, year: year, credentials: credentials)
 			.observeOn(MainScheduler.instance)
 			.subscribe(onSuccess: { [weak self] mirror in
-				self?.view?.show(mirror: mirror)
+				guard let strongSelf = self else { return }
+
+				strongSelf.view?.show(mirror: mirror, for: date)
 			}) { [weak self] error in
 				self?.view?.showError(message: error.localizedDescription)
 			}.disposed(by: disposeBag)

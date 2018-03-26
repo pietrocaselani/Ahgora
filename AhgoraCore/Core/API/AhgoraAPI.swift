@@ -4,12 +4,12 @@ public struct MirrorAPIParameters {
 	public let year: Int
 	public let month: Int
 	public let companyIdentifier: String
-	public let employeeRegistration: Int
+	public let employeeRegistration: String
 	public let employeePassword: String
 }
 
 public struct PunchAPIParameters {
-	public let employeeRegistration: Int
+	public let employeeRegistration: String
 	public let employeePassword: String
 	public let companyTokenIdentifier: String
 }

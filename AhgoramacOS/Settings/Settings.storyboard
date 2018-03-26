@@ -54,7 +54,7 @@
                                 </secureTextFieldCell>
                             </secureTextField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7OL-Hi-a4D">
-                                <rect key="frame" x="14" y="126" width="81" height="32"/>
+                                <rect key="frame" x="14" y="92" width="81" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Salvar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BYq-4B-k0s">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -64,6 +64,15 @@
                                     <action selector="saveCredentials:" target="V7i-0t-pYK" id="1pB-45-pVt"/>
                                 </connections>
                             </button>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lFQ-f5-dpH">
+                                <rect key="frame" x="20" y="128" width="211" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Último dia do mês" drawsBackground="YES" id="BPA-wf-Mmv">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
@@ -71,6 +80,7 @@
                         <outlet property="companyTokenIdentifierTextField" destination="JqX-Tb-YRm" id="bY1-Hb-nKS"/>
                         <outlet property="employeePasswordTextField" destination="AEj-YV-vAq" id="z3I-4e-OZx"/>
                         <outlet property="employeeRegistrationTextField" destination="oeb-pN-kr6" id="9Xc-gA-vV8"/>
+                        <outlet property="lastDayOfMonthTextField" destination="lFQ-f5-dpH" id="BSg-TU-OMs"/>
                     </connections>
                 </viewController>
                 <customObject id="miY-mA-pcq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

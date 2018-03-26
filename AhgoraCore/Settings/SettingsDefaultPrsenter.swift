@@ -18,11 +18,11 @@ public final class SettingsDefaultPresenter: SettingsPresenter {
 			.subscribe(onNext: { [weak self] newAppState in
 				guard let strongSelf = self, let view = strongSelf.view else { return }
 
-				switch newAppState {
+				switch newAppState.loginState {
 				case .notLogged:
 					view.showNotLogged()
 				case .logged(let credentials):
-					let viewModel = strongSelf.convertToViewModel(credentials)
+					let viewModel = strongSelf.convertToViewModel(newAppState, credentials)
 					view.show(viewModel: viewModel)
 				}
 			}, onError: { [weak self] error in
@@ -31,11 +31,8 @@ public final class SettingsDefaultPresenter: SettingsPresenter {
 			}).disposed(by: disposeBag)
 	}
 
-	public func save(companyTokenIdentifier: String, companyIdentifier: String, employeeRegistration: String, employeePassword: String) {
-		guard let registration = Int(employeeRegistration) else { return }
-
-		let completable = interactor.update(companyTokenIdentifier: companyTokenIdentifier, companyIdentifier: companyIdentifier,
-											employeeRegistration: registration, employeePassword: employeePassword)
+	public func save(settings: Settings) {
+		let completable = interactor.update(settings: settings)
 
 		completable.observeOn(MainScheduler.instance)
 			.subscribe(onCompleted: { [weak self] in
@@ -45,11 +42,15 @@ public final class SettingsDefaultPresenter: SettingsPresenter {
 			}.disposed(by: disposeBag)
 	}
 
-	private func convertToViewModel(_ credentials: Credentials) -> SettingsViewModel {
+	private func convertToViewModel(_ appState: AppState, _ credentials: Credentials) -> SettingsViewModel {
 		let employee = credentials.employee
 		let company = credentials.company
+		let lastDayOfMonth = String(appState.lastDayOfMonth)
 
-		return SettingsViewModel(companyTokenIdentifier: company.tokenIdentifier, companyIdentifier: company.identifier,
-								 employeeRegistration: employee.registration, employeePassword: employee.password)
+		return SettingsViewModel(companyTokenIdentifier: company.tokenIdentifier,
+								 companyIdentifier: company.identifier,
+								 employeeRegistration: employee.registration,
+								 employeePassword: employee.password,
+								 lastDayOfMonth: lastDayOfMonth)
 	}
 }

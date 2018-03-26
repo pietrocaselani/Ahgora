@@ -1,12 +1,12 @@
 import Foundation
 
 final class SecurePersistableCredentials: NSObject, NSCoding {
-	let employeeRegistration: Int
+	let employeeRegistration: String
 	let employeePassword: String
 	let companyTokenIdentifier: String
 	let companyIdentifier: String
 
-	init(employeeRegistration: Int, employeePassword: String, companyTokenIdentifier: String, companyIdentifier: String) {
+	init(employeeRegistration: String, employeePassword: String, companyTokenIdentifier: String, companyIdentifier: String) {
 		self.employeeRegistration = employeeRegistration
 		self.employeePassword = employeePassword
 		self.companyTokenIdentifier = companyTokenIdentifier
@@ -16,11 +16,12 @@ final class SecurePersistableCredentials: NSObject, NSCoding {
 	init?(coder decoder: NSCoder) {
 		guard let companyTokenIdentifier = decoder.decodeObject(forKey: "companyTokenIdentifier") as? String,
 			let companyIdentifier = decoder.decodeObject(forKey: "companyIdentifier") as? String,
-			let employeePassword = decoder.decodeObject(forKey: "employeePassword") as? String else {
+			let employeePassword = decoder.decodeObject(forKey: "employeePassword") as? String,
+			let employeeRegistration = decoder.decodeObject(forKey: "employeeRegistration") as? String else {
 				return nil
 		}
 
-		self.employeeRegistration = decoder.decodeInteger(forKey: "employeeRegistration")
+		self.employeeRegistration = employeeRegistration
 		self.employeePassword = employeePassword
 		self.companyTokenIdentifier = companyTokenIdentifier
 		self.companyIdentifier = companyIdentifier

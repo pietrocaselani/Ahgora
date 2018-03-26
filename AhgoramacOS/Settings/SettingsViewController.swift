@@ -8,6 +8,7 @@ final class SettingsViewController: NSViewController, SettingsView {
 	@IBOutlet weak var companyIdentifierTextField: NSTextField!
 	@IBOutlet weak var employeeRegistrationTextField: NSTextField!
 	@IBOutlet weak var employeePasswordTextField: NSTextField!
+	@IBOutlet weak var lastDayOfMonthTextField: NSTextField!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -24,16 +25,20 @@ final class SettingsViewController: NSViewController, SettingsView {
 		let companyIdentifier = companyIdentifierTextField.stringValue
 		let employeeRegistration = employeeRegistrationTextField.stringValue
 		let employeePassword = employeePasswordTextField.stringValue
+		let lastDayOfMonth = lastDayOfMonthTextField.integerValue
 
-		presenter.save(companyTokenIdentifier: companyToken,
-					   companyIdentifier: companyIdentifier, employeeRegistration: employeeRegistration, employeePassword: employeePassword)
+		let company = SettingsCompany(token: companyToken, identifier: companyIdentifier)
+		let employee = SettingsEmployee(registration: employeeRegistration, password: employeePassword)
+
+		presenter.save(settings: Settings(company: company, employee: employee, lastDayOfMonth: lastDayOfMonth))
 	}
 
 	func show(viewModel: SettingsViewModel) {
 		companyTokenIdentifierTextField.stringValue = viewModel.companyTokenIdentifier
 		companyIdentifierTextField.stringValue = viewModel.companyIdentifier
-		employeeRegistrationTextField.integerValue = viewModel.employeeRegistration
+		employeeRegistrationTextField.stringValue = viewModel.employeeRegistration
 		employeePasswordTextField.stringValue = viewModel.employeePassword
+		lastDayOfMonthTextField.stringValue = viewModel.lastDayOfMonth
 	}
 
 	func showCredentialsUpdated() {

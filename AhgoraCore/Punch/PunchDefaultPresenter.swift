@@ -16,12 +16,12 @@ public final class PunchDefaultPresenter: PunchPresenter {
 
 	public func viewDidLoad() {
 		appStateObservable.observe()
-			.catchErrorJustReturn(AppState.notLogged)
+			.catchErrorJustReturn(AppState.initial)
 			.observeOn(MainScheduler.instance)
 			.subscribe(onNext: { [weak self] appState in
 				self?.appState = appState
 
-				if appState == .notLogged {
+				if appState.loginState == .notLogged {
 					self?.view?.showMissingCredentials()
 				} else {
 					self?.view?.showCredentialsValid()
@@ -30,7 +30,7 @@ public final class PunchDefaultPresenter: PunchPresenter {
 	}
 
 	public func punch() {
-		if case .logged(let credentials) = appState {
+		if case .logged(let credentials) = appState.loginState {
 			interactor.punch(credentials: credentials)
 				.observeOn(MainScheduler.instance)
 				.subscribe(onSuccess: { [weak self] result in

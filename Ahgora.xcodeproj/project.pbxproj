@@ -36,6 +36,8 @@
 		4F20F5A82053293800FD7F10 /* AppFlowContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20F588205326E200FD7F10 /* AppFlowContract.swift */; };
 		4F20F5A92053293800FD7F10 /* AppFlowDefaultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20F58F2053280E00FD7F10 /* AppFlowDefaultPresenter.swift */; };
 		4F3634282062FFA00045CDCA /* mirror.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FB45FB520626F4700400F4B /* mirror.json */; };
+		4F3B3FA220698EE100A0A922 /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3B3FA120698EE100A0A922 /* LoginState.swift */; };
+		4F3B3FA320698EE100A0A922 /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3B3FA120698EE100A0A922 /* LoginState.swift */; };
 		4F56580920587BE600D3D56B /* Punch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F56580820587BE600D3D56B /* Punch.storyboard */; };
 		4F56580B20587BF400D3D56B /* PunchModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56580A20587BF400D3D56B /* PunchModule.swift */; };
 		4F56580D20587BFF00D3D56B /* PunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56580C20587BFF00D3D56B /* PunchViewController.swift */; };
@@ -233,6 +235,7 @@
 		4F20F5992053292900FD7F10 /* AhgoraCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AhgoraCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F20F59B2053292900FD7F10 /* AhgoraCoreiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AhgoraCoreiOS.h; sourceTree = "<group>"; };
 		4F20F59C2053292900FD7F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F3B3FA120698EE100A0A922 /* LoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
 		4F56580820587BE600D3D56B /* Punch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Punch.storyboard; sourceTree = "<group>"; };
 		4F56580A20587BF400D3D56B /* PunchModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchModule.swift; sourceTree = "<group>"; };
 		4F56580C20587BFF00D3D56B /* PunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchViewController.swift; sourceTree = "<group>"; };
@@ -629,6 +632,7 @@
 				4FF9B1132055CBDA00FD28F1 /* CompanyCredentials.swift */,
 				4FF9B1532055E84100FD28F1 /* Credentials.swift */,
 				4FF9B1162055CBE800FD28F1 /* EmployeeCredentials.swift */,
+				4F3B3FA120698EE100A0A922 /* LoginState.swift */,
 				4FF9B1262055D11E00FD28F1 /* SecurePersistableCredentials.swift */,
 			);
 			path = AppState;
@@ -1293,6 +1297,7 @@
 				4FF9B17820560C3E00FD28F1 /* JSONExtensions.swift in Sources */,
 				4FF9B12D2055D75A00FD28F1 /* SettingsService.swift in Sources */,
 				4FF9B1512055E7D700FD28F1 /* MirrorMoyaNetwork.swift in Sources */,
+				4F3B3FA220698EE100A0A922 /* LoginState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1355,6 +1360,7 @@
 				4FF9B17920560C3E00FD28F1 /* JSONExtensions.swift in Sources */,
 				4FF9B12E2055D75A00FD28F1 /* SettingsService.swift in Sources */,
 				4FF9B1522055E7D700FD28F1 /* MirrorMoyaNetwork.swift in Sources */,
+				4F3B3FA320698EE100A0A922 /* LoginState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

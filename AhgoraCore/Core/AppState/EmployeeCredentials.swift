@@ -1,8 +1,8 @@
 public struct EmployeeCredentials: Hashable {
-	public let registration: Int
+	public let registration: String
 	public let password: String
 
-	public init(registration: Int, password: String) {
+	public init(registration: String, password: String) {
 		self.registration = registration
 		self.password = password
 	}

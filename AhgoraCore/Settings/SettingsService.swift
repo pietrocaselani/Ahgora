@@ -7,11 +7,12 @@ public final class SettingsService: SettingsInteractor {
 		self.dataSource = dataSource
 	}
 
-	public func update(companyTokenIdentifier: String, companyIdentifier: String, employeeRegistration: Int, employeePassword: String) -> Completable {
-		let company = CompanyCredentials(tokenIdentifier: companyTokenIdentifier, identifier: companyIdentifier)
-		let employee = EmployeeCredentials(registration: employeeRegistration, password: employeePassword)
+	public func update(settings: Settings) -> Completable {
+		let company = CompanyCredentials(tokenIdentifier: settings.company.token, identifier: settings.company.identifier)
+		let employee = EmployeeCredentials(registration: settings.employee.registration, password: settings.employee.password)
 		let credentials = Credentials(company: company, employee: employee)
-		let appState = AppState.logged(credentials: credentials)
+		let loginState = LoginState.logged(credentials: credentials)
+		let appState = AppState(loginState: loginState, lastDayOfMonth: AppState.lastDayOfMonthDefault)
 		return dataSource.saveState(appState: appState)
 	}
 }
