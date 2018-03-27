@@ -18,6 +18,9 @@ final class SettingsViewController: UIViewController, SettingsView {
 		}
 
 		presenter.viewDidLoad()
+
+		companyTokenIdentifierTextField.text = "95f284b6b67a9403cb1295eace06fb57"
+		companyIdentifierTextField.text = "a131865"
 	}
 
 	func show(viewModel: SettingsViewModel) {
@@ -49,6 +52,12 @@ final class SettingsViewController: UIViewController, SettingsView {
 	}
 
 	@IBAction func saveCredentials(_ sender: Any) {
+		companyIdentifierTextField.resignFirstResponder()
+		companyTokenIdentifierTextField.resignFirstResponder()
+		employeeRegistrationTextField.resignFirstResponder()
+		employeePasswordTextField.resignFirstResponder()
+		lastDayOfMonthTextField.resignFirstResponder()
+
 		guard let companyTokenIdentifier = companyTokenIdentifierTextField.text,
 			let companyIdentifier = companyIdentifierTextField.text,
 			let employeeRegistration = employeeRegistrationTextField.text,

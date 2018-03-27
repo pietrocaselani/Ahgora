@@ -52,10 +52,6 @@ final class MirrorViewController: UIViewController, MirrorView {
 		let month = calendar.component(.month, from: date)
 		let year = calendar.component(.year, from: date)
 
-		let dateFormatter = DateFormatter()
-		dateFormatter.dateFormat = "MM/yyyy"
-		changeMonthButton.setTitle(dateFormatter.string(from: date), for: .normal)
-
 		presenter.mirrorFor(month: month, year: year)
 	}
 	
@@ -95,6 +91,9 @@ final class MirrorViewController: UIViewController, MirrorView {
 
 		self.admissionDate = dateFormatter.date(from: mirror.employee.admissionDate) ?? today
 		self.currentDate = date
+
+		dateFormatter.dateFormat = "MM/yyyy"
+		changeMonthButton.setTitle(dateFormatter.string(from: date), for: .normal)
 
 		employeeLabel.text = mirror.employee.name
 		hoursLabel.text = mirror.results.map { "\($0.type): \($0.value)" }.joined(separator: " | ")
