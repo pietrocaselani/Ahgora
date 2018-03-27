@@ -1037,6 +1037,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Ahgora/Pods-Ahgora-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya-iOS/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/RMActionController/RMActionController.framework",
+				"${BUILT_PRODUCTS_DIR}/RMDateSelectionViewController/RMDateSelectionViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/Result-iOS/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/TimeIntervals-iOS/TimeIntervals.framework",
@@ -1045,6 +1047,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMActionController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMDateSelectionViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TimeIntervals.framework",

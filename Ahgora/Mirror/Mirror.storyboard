@@ -36,12 +36,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggL-t6-b8f">
-                                <rect key="frame" x="16" y="94" width="30" height="30"/>
-                                <connections>
-                                    <action selector="changeMonth:" destination="hXR-8f-3JQ" eventType="touchUpInside" id="UWc-vs-G8g"/>
-                                </connections>
-                            </button>
                             <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sku-gN-HhV">
                                 <rect key="frame" x="0.0" y="140" width="375" height="527"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -72,33 +66,50 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWv-zV-U6Y">
+                                <rect key="frame" x="16" y="94" width="79" height="30"/>
+                                <state key="normal" title="Alterar mês"/>
+                                <connections>
+                                    <action selector="changeMonth:" destination="hXR-8f-3JQ" eventType="touchUpInside" id="Fs6-ex-tjx"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsg-Ax-wOm">
+                                <rect key="frame" x="299" y="94" width="60" height="30"/>
+                                <state key="normal" title="Atualizar"/>
+                                <connections>
+                                    <action selector="update:" destination="hXR-8f-3JQ" eventType="touchUpInside" id="7Ir-YU-mra"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ggL-t6-b8f" firstAttribute="leading" secondItem="LGD-gF-nwb" secondAttribute="leading" constant="16" id="336-5L-zdX"/>
+                            <constraint firstItem="fsg-Ax-wOm" firstAttribute="top" secondItem="9rN-gx-wac" secondAttribute="bottom" constant="16" id="2YY-tB-zdI"/>
                             <constraint firstItem="LGD-gF-nwb" firstAttribute="trailing" secondItem="px7-40-Vgw" secondAttribute="trailing" constant="16" id="46g-1S-RcA"/>
-                            <constraint firstItem="ggL-t6-b8f" firstAttribute="top" secondItem="9rN-gx-wac" secondAttribute="bottom" constant="16" id="6E1-n4-qPl"/>
                             <constraint firstItem="px7-40-Vgw" firstAttribute="leading" secondItem="LGD-gF-nwb" secondAttribute="leading" constant="16" id="8rh-Rf-FMN"/>
                             <constraint firstItem="9rN-gx-wac" firstAttribute="top" secondItem="px7-40-Vgw" secondAttribute="bottom" constant="16" id="8uj-Mr-X3c"/>
                             <constraint firstItem="TIu-aa-mXW" firstAttribute="leading" secondItem="LGD-gF-nwb" secondAttribute="leading" constant="16" id="9fk-un-Fq6"/>
                             <constraint firstItem="TIu-aa-mXW" firstAttribute="centerY" secondItem="LGD-gF-nwb" secondAttribute="centerY" id="DzD-Eo-eye"/>
                             <constraint firstItem="LGD-gF-nwb" firstAttribute="trailing" secondItem="sku-gN-HhV" secondAttribute="trailing" id="Ieq-3h-mBc"/>
+                            <constraint firstItem="LWv-zV-U6Y" firstAttribute="leading" secondItem="LGD-gF-nwb" secondAttribute="leading" constant="16" id="TxX-dF-G58"/>
                             <constraint firstItem="sku-gN-HhV" firstAttribute="leading" secondItem="LGD-gF-nwb" secondAttribute="leading" id="a9L-nr-IgA"/>
+                            <constraint firstItem="sku-gN-HhV" firstAttribute="top" secondItem="LWv-zV-U6Y" secondAttribute="bottom" constant="16" id="d9G-9F-G3T"/>
+                            <constraint firstItem="LGD-gF-nwb" firstAttribute="trailing" secondItem="fsg-Ax-wOm" secondAttribute="trailing" constant="16" id="fF9-hz-NjQ"/>
                             <constraint firstItem="LGD-gF-nwb" firstAttribute="trailing" secondItem="TIu-aa-mXW" secondAttribute="trailing" constant="16" id="fIo-pf-eNy"/>
                             <constraint firstItem="LGD-gF-nwb" firstAttribute="trailing" secondItem="9rN-gx-wac" secondAttribute="trailing" constant="16" id="fVY-OM-Uop"/>
                             <constraint firstItem="9rN-gx-wac" firstAttribute="leading" secondItem="LGD-gF-nwb" secondAttribute="leading" constant="16" id="nGQ-bw-83M"/>
-                            <constraint firstItem="sku-gN-HhV" firstAttribute="top" secondItem="ggL-t6-b8f" secondAttribute="bottom" constant="16" id="qEV-U1-Uhb"/>
                             <constraint firstItem="LGD-gF-nwb" firstAttribute="bottom" secondItem="sku-gN-HhV" secondAttribute="bottom" id="qea-L5-jxr"/>
+                            <constraint firstItem="LWv-zV-U6Y" firstAttribute="top" secondItem="9rN-gx-wac" secondAttribute="bottom" constant="16" id="sbA-UE-DBM"/>
                             <constraint firstItem="px7-40-Vgw" firstAttribute="top" secondItem="LGD-gF-nwb" secondAttribute="top" id="z8n-nC-ymP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LGD-gF-nwb"/>
                     </view>
                     <connections>
-                        <outlet property="changeMonthButton" destination="ggL-t6-b8f" id="yBq-L1-PUT"/>
+                        <outlet property="changeMonthButton" destination="LWv-zV-U6Y" id="1wD-xR-gqh"/>
                         <outlet property="employeeLabel" destination="px7-40-Vgw" id="CEz-A7-Oua"/>
                         <outlet property="hoursLabel" destination="9rN-gx-wac" id="u9W-gi-yXg"/>
                         <outlet property="infoLabel" destination="TIu-aa-mXW" id="9wK-oC-tp8"/>
                         <outlet property="tableView" destination="sku-gN-HhV" id="RFA-qc-Ppc"/>
+                        <outlet property="updateButton" destination="fsg-Ax-wOm" id="ft5-Mf-OGv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XWu-8u-e9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>

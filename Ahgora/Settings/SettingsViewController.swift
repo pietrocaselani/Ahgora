@@ -8,6 +8,7 @@ final class SettingsViewController: UIViewController, SettingsView {
 	@IBOutlet weak var companyIdentifierTextField: UITextField!
 	@IBOutlet weak var employeeRegistrationTextField: UITextField!
 	@IBOutlet weak var employeePasswordTextField: UITextField!
+	@IBOutlet weak var lastDayOfMonthTextField: UITextField!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -24,11 +25,10 @@ final class SettingsViewController: UIViewController, SettingsView {
 		companyIdentifierTextField.text = viewModel.companyIdentifier
 		employeeRegistrationTextField.text = String(viewModel.employeeRegistration)
 		employeePasswordTextField.text = String(viewModel.employeePassword)
+		lastDayOfMonthTextField.text = viewModel.lastDayOfMonth
 	}
 
-	func showNotLogged() {
-		
-	}
+	func showNotLogged() {}
 
 	func showError(message: String) {
 		let errorController = UIAlertController.createErrorAlert(message: message)
@@ -54,9 +54,12 @@ final class SettingsViewController: UIViewController, SettingsView {
 			let employeeRegistration = employeeRegistrationTextField.text,
 			let employeePassword = employeePasswordTextField.text else { return }
 
-		presenter.save(companyTokenIdentifier: companyTokenIdentifier,
-					   companyIdentifier: companyIdentifier,
-					   employeeRegistration: employeeRegistration,
-					   employeePassword: employeePassword)
+		let lastDayOfMonth = Int(lastDayOfMonthTextField.text ?? "") ?? AppState.lastDayOfMonthDefault
+
+		let company = SettingsCompany(token: companyTokenIdentifier, identifier: companyIdentifier)
+		let employee = SettingsEmployee(registration: employeeRegistration, password: employeePassword)
+		let settings = Settings(company: company, employee: employee, lastDayOfMonth: lastDayOfMonth)
+
+		presenter.save(settings: settings)
 	}
 }

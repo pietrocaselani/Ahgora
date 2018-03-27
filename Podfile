@@ -6,6 +6,11 @@ def common_pods
   pod 'TimeIntervals', '~> 1.0.0'
 end
 
+def ios_pods
+  common_pods
+  pod "RMDateSelectionViewController", "~> 2.3.1"
+end
+
 def tests_shared_pods
   pod 'RxTest', '4.1.2'
 end
@@ -14,7 +19,7 @@ target 'Ahgora' do
   platform :ios, '10.0'
   use_frameworks!
 
-  common_pods
+  ios_pods
 
 end
 

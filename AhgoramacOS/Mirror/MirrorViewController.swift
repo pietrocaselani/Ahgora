@@ -1,4 +1,4 @@
-	import Cocoa
+import Cocoa
 import AhgoraCore
 
 final class MirrorViewController: NSViewController, MirrorView {
