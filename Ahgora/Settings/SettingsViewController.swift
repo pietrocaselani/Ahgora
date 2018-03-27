@@ -18,9 +18,6 @@ final class SettingsViewController: UIViewController, SettingsView {
 		}
 
 		presenter.viewDidLoad()
-
-		companyTokenIdentifierTextField.text = "95f284b6b67a9403cb1295eace06fb57"
-		companyIdentifierTextField.text = "a131865"
 	}
 
 	func show(viewModel: SettingsViewModel) {
