@@ -59,8 +59,8 @@ public struct MirrorDay {
 				return nil
 		}
 
-		self.punches = punchesJSON.flatMap { MirrorDayPunch(json: $0) }
-		self.results = resultsJSON.flatMap { MirrorDayResult(json: $0) }
+		self.punches = punchesJSON.compactMap { MirrorDayPunch(json: $0) }
+		self.results = resultsJSON.compactMap { MirrorDayResult(json: $0) }
 		self.date = date
 
 		self.dateFormatter = DateFormatter()

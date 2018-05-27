@@ -14,7 +14,7 @@ public struct MirrorDays: Decodable {
 
 		let formatter = AhgoraDateFormatter.instance.dateFormatter
 
-		let days = result.flatMap { (key, value) -> MirrorDay? in
+		let days = result.compactMap { (key, value) -> MirrorDay? in
 			guard let date = formatter.date(from: key),
 				let json = value as? Dictionary<String, Any> else {
 					return MirrorDay.empty
@@ -28,7 +28,3 @@ public struct MirrorDays: Decodable {
 		})
 	}
 }
-
-
-
-
